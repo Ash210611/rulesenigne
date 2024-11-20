@@ -1,0 +1,17 @@
+name: manual_deploy
+
+on: workflow_dispatch
+
+permissions:
+  contents: read
+  id-token: write
+  checks: write
+
+jobs:
+  Deploy:
+    name: Production Deploy
+    uses: ./.github/workflows/deploy.yaml
+    with:
+      environment: prod
+      action: apply
+    secrets: inherit

@@ -1,0 +1,37 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_classwords.lst
+#
+# List of data modeling classwords, which are the standard suffix of any attribute/column in a modeled database object.
+#
+# logical_classword | physical_classword 
+# ----------------- | ------------------ 
+AMOUNT              | AMT                
+CODE                | CD                 
+COUNT               | CNT                
+DATE                | DT                 
+DESCRIPTION         | DESC               
+GEOGRAPHYPOINT      | GPT                
+IDENTIFIER          | ID                 
+INDICATOR           | IND                
+KEY                 | KEY                
+LIMIT               | LMT                
+LINE                | LN                 
+MEASURE             | MSR                
+NAME                | NM                 
+NUMBER              | NUM                
+OBJECT              | OBJ                
+PERCENT             | PCT                
+PERCENTAGE          | PCTG               
+PERCENTILE          | PCTL               
+QUALIFIER           | QUALR              
+QUANTITY            | QTY                
+RANGE               | RNG                
+RATE                | RT                 
+RATIO               | RTO                
+SEQUENCE            | SEQ                
+TEXT                | TXT                
+TIME                | TM                 
+TIMESTAMP           | TS                 
+TYPE                | TYP                
+TYPE                | TY                 
+YEAR                | YR                 
+YEAR MONTH          | YR_MTH             

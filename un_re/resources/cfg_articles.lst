@@ -1,0 +1,16 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_articles.lst
+#
+# Table and column names should avoid using articles as a name-part token.
+# This config table lists the articles that should be excluded.
+#
+# article_nm | 
+# ---------- | 
+A            | 
+AN           | 
+AND          | 
+IN           | 
+IS           | 
+OF           | 
+OR           | 
+THE          | 
+WITH         | 

@@ -1,0 +1,583 @@
+#
+# This file lists the URLs that document each rule.
+# Any lines in this file THAT BEGINS with a '#' will be considered comments.
+# Comment lines will be ignored.
+#
+# Columns are separated using a pipe delimiter.
+#
+# The Confluence URLS are shorted here: http://i.cig.na/
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | 
+# id   | URL
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# g001 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-g001:AllinputfilesmustbereadablebytheUTF-8codeset
+# g001 | http://i.cig.na/KRQvy
+g001   | https://confluence.sys.cigna.com/x/wyarPg
+#
+# g002 | 
+#
+# g003 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-g003:SQLStatementsmustusevalidsyntax.
+# g003 | http://i.cig.na/L3w40
+g003   | https://confluence.sys.cigna.com/x/5yarPg
+#
+# g004 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-g004:ADatabasecontextmustexist
+# g004 | http://i.cig.na/hRGDI
+g004   | https://confluence.sys.cigna.com/x/7SarPg
+#
+# g005 | http://i.cig.na/jk4Mq 
+g005   | https://confluence.sys.cigna.com/x/XzmrPg
+#
+# g011 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-g011:DDLCommandsshoulduseaconsistentcaseforatablenameandthecolumnnames.
+# g011 | http://i.cig.na/jk4Mq
+g011   | https://confluence.sys.cigna.com/x/9SarPg
+#
+# g012   | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-g012:RulesetIndicatorsmustbeoneofthevalidvalues
+# g012 | http://i.cig.na/u65cK
+g012   | https://confluence.sys.cigna.com/x/BierPg
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | 
+# id   | URL
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# r001 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r001:CannotgrantSYSDBApermissiontoanyone
+# r001 | http://i.cig.na/AdAbu
+r001   | https://confluence.sys.cigna.com/x/pierPg
+#
+# r002 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r002:Everytablemusthaveaprimarykey.
+# r002 | http://i.cig.na/HkJjQ
+r002   | https://confluence.sys.cigna.com/x/9ierPg
+#
+# r003 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r003:Everycolumnnamemusthaveavalidclassword.
+# r003 | http://i.cig.na/4sgMg
+r003   | https://confluence.sys.cigna.com/x/_yerPg
+#
+# r004 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r004:Everycolumnmusthaveavaliddatatypeforitsclassword
+# r004 | http://i.cig.na/mtg2D
+r004   | https://confluence.sys.cigna.com/x/ACirPg
+#
+# r005 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r005:Objectsareplacedinanappropriatetablespace
+# r005 | http://i.cig.na/uCIXD
+r005   | https://confluence.sys.cigna.com/x/CCirPg
+#
+# r006 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r006:PhysicalDBAcommandsshouldnotbedeployedbyautomation
+# r006 | http://i.cig.na/6QS9P
+r006   | https://confluence.sys.cigna.com/x/DiirPg
+#
+r200   | 
+#
+# r201 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r201:Columncommentscannotbenull,empty,spaces,orblank.
+# r201 | http://i.cig.na/cqzEa
+r201   | https://confluence.sys.cigna.com/x/hSirPg
+# 
+r202   | 
+#
+# r203 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r203:Columncommentsmustbelessthan256characters
+# r203 | http://i.cig.na/PcALP
+r203   | https://confluence.sys.cigna.com/x/iyirPg
+#
+r204   | 
+#
+# r205 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r205:Columnnamesshouldnotcontainbadcharacters
+# r205 | http://i.cig.na/gBkBw
+r205   | https://confluence.sys.cigna.com/x/kiirPg
+# 
+r206   | 
+#
+# r207 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r207:Columncommentsshouldnotcontainbadcharacters
+# r207 | http://i.cig.na/LVhgz
+r207   | https://confluence.sys.cigna.com/x/mCirPg
+# 
+r208   | 
+#
+r209   | 
+#
+r210   | 
+#
+r211   | 
+#
+r212   | 
+#
+# r213 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r213:Columnnamesshouldusenewbusinesstermsratherthanoldbusinessterms.
+# r213 | http://i.cig.na/kvyJn
+r213   | https://confluence.sys.cigna.com/x/oCirPg
+#
+r214   | 
+#
+r215   | 
+#
+# r216 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r216:Eachphysicalcolumnnamemusthaveanapprovedclasswordabbreviation
+# r216 | http://i.cig.na/TdTf7
+r216   | https://confluence.sys.cigna.com/x/qSirPg
+#
+# r217 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r217:Classwordexceptionsmustbeontheapprovedlist.
+# r217 | http://i.cig.na/25njc
+r217   | https://confluence.sys.cigna.com/x/rSirPg
+#
+r218   | 
+#
+# r219 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r219:Columnnamedoesnotcontainarticles.
+# r219 | http://i.cig.na/IwxE5
+r219   | https://confluence.sys.cigna.com/x/tiirPg
+#
+r220   | 
+#
+# r221 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r221:Arrayindicatorsshouldfollowtheclassword.
+# r221 | http://i.cig.na/14ApM
+r221   | https://confluence.sys.cigna.com/x/RyurPg
+#
+r223   | 
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | 
+# id   | URL
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r224   | 
+#
+r225   | 
+#
+r226   | 
+#
+r227   | 
+#
+r228   | 
+#
+r229   | 
+#
+r230   | 
+#
+r231   | 
+#
+r232   | 
+#
+r233   | 
+#
+r234   | 
+#
+r235   | 
+#
+r236   | 
+#
+r237   | 
+#
+r238   | 
+#
+r239   | 
+#
+r240   | 
+#
+# r241 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r241:Thetablecommentcannotbenull,empty,spaces,orblank.
+# r241 | http://i.cig.na/9ILEw
+r241   | https://confluence.sys.cigna.com/x/TyurPg
+#
+r242   | 
+#
+# r243 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r243:Tablecommentsmustbelessthan256characters
+# r243 | http://i.cig.na/QKm3Z
+r243   | https://confluence.sys.cigna.com/x/VyurPg
+#
+r244   | 
+#
+# r245 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r245:Tablenamesshouldnotcontainbadcharacters
+# r245 | http://i.cig.na/BAZLZ
+r245   | https://confluence.sys.cigna.com/x/XyurPg
+#
+r246   | 
+#
+# r247 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r247:Tablecommentsshouldnotcontainbadcharacters
+# r247 | http://i.cig.na/aN4he
+r247   | https://confluence.sys.cigna.com/x/diurPg
+#
+r248   | 
+#
+r249   | 
+#
+r250   | 
+#
+r251   | 
+#
+# r253 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r253:Tablenamesshouldnotcontainobsoletebusinessterms
+# r253 | http://i.cig.na/5pvFg
+r253   | https://confluence.sys.cigna.com/x/gCurPg
+#
+r254   | 
+#
+r255   | 
+#
+r256   | 
+#
+r257   | 
+#
+# r258 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r258:Tablenamesshouldnotcontainarticles
+# r258 | http://i.cig.na/3MjNm
+r258   | https://confluence.sys.cigna.com/x/hyurPg
+#
+r259   | 
+#
+# r260 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r260:Tablenames,andcolumnnameswithinatable,mustbeunique
+# r260 | http://i.cig.na/Ur5vs
+r260   | https://confluence.sys.cigna.com/x/jSurPg
+#
+r261   | 
+#
+r262   | 
+#
+# r298 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r298:TMPtablesshouldbenamedTEMP
+# r298 | http://i.cig.na/GX1Ee
+r298   | https://confluence.sys.cigna.com/x/lSurPg
+#
+# r299 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r299:Columnsshoulduseconsistentdatatypes.
+# r299 | http://i.cig.na/inRJm
+r299   | https://confluence.sys.cigna.com/x/niurPg
+#
+# r300 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r300:Tablenamesshouldbe128charactersorless.
+# r300 | http://i.cig.na/gWi0O
+r300   | https://confluence.sys.cigna.com/x/qyurPg
+#
+# r301 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r301:Columnnamesmustbe128charactersorless
+# r301 | http://i.cig.na/pV8Aa
+r301   | https://confluence.sys.cigna.com/x/sCurPg
+#
+# r303 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r303:Physicalnamesshouldbederivedfromlogicalnames.
+# r303 | http://i.cig.na/A6wLZ
+r303   | https://confluence.sys.cigna.com/x/uSurPg
+#
+# r306 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r306:CD(code)columnsshoulduseadatatypeofVARCHAR(10)
+# r306 | http://i.cig.na/uyKwY
+r306   | https://confluence.sys.cigna.com/x/wSurPg
+#
+# r307 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r307:CTAStablenamesmuststartwith'TEMP'
+# r307 | http://i.cig.na/uQ8JW
+r307   | https://confluence.sys.cigna.com/x/yCurPg
+#
+# r308 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r308:Ifastoragetypeisspecified,thePARQUETstoragetypeshouldbeused
+# r308 | http://i.cig.na/TandU
+r308   | https://confluence.sys.cigna.com/x/0CurPg
+#
+# r309 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r309:DatabricksOptimizeZORDERcolumnsshouldnotbedates.
+r309   | https://confluence.sys.cigna.com/x/1iurPg
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | 
+# id   | 
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# r401 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r401:Allexpectedcontentshouldbefound.
+# r401 | http://i.cig.na/mXfSM
+r401   | https://confluence.sys.cigna.com/x/2yurPg
+#
+# r402 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r402:NoUN-expectedcontentisfound.
+# r402 | http://i.cig.na/LMfAe
+r402   | https://confluence.sys.cigna.com/x/4iurPg
+#
+# r403 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r403:Aprimaryindexmustbedefinedforeachtable.
+# r403 | http://i.cig.na/CRsjA
+r403   | https://confluence.sys.cigna.com/x/5yurPg
+#
+# r404 | 
+#
+# r405 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r405:Onlycollectstatisticsonatableonce.
+# r405 | http://i.cig.na/D3Xt2
+r405   | https://confluence.sys.cigna.com/x/6SurPg
+#
+# r406 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r406:Allviewsmustbecreatedwithaclausethatsays'lockingrowsforaccess'
+# r406 | http://i.cig.na/bPnu8
+r406   | https://confluence.sys.cigna.com/x/8SurPg
+#
+# r407 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r407:CertainAlterTablecommandsarenotallowed
+# r407 | http://i.cig.na/OzRWN
+r407   | https://confluence.sys.cigna.com/x/9SurPg
+#
+# r408 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r408:Backuptablenamesmustusethe_BAKsuffix.
+# r408 | http://i.cig.na/sseaM
+r408   | https://confluence.sys.cigna.com/x/-CurPg
+#
+# r411 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r411:Objectsshouldbelocatedappropriately
+# r411 | http://i.cig.na/HVvNE
+r411   | https://confluence.sys.cigna.com/x/ACyrPg
+#
+# r412 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r412:InsertStatementshouldnotuseSelect*
+# r412 | http://i.cig.na/ZR94U
+r412   | https://confluence.sys.cigna.com/x/ByyrPg
+#
+# r413 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r413:ReplaceViewcommandsshouldincludeadatabasequalifier.
+# r413 | http://i.cig.na/ADIFG
+r413   | https://confluence.sys.cigna.com/x/CyyrPg
+#
+# r414 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r414:Identitydatatypesshouldnotbeused
+# r414 | http://i.cig.na/fqzvT
+r414   | https://confluence.sys.cigna.com/x/DyyrPg
+#
+# r415 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r415:TablesinaBASEdatabaseshouldbeSETtables,notMULTISETtables.
+# r415 | http://i.cig.na/0lBEZ
+r415   | https://confluence.sys.cigna.com/x/GCyrPg
+#
+# r416 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r416:DDLscriptsshouldusesimpleplaintext,andnotusecontrolcharacters.
+# r416 | http://i.cig.na/4oiQ4
+r416   | https://confluence.sys.cigna.com/x/GyyrPg
+#
+r417   | 
+#
+r418   | 
+#
+r419   | https://confluence.sys.cigna.com/x/TlerPg
+#
+#
+# SWC 9/22/2020: Rule r420 is not needed and is now deactivated for the time being, 
+# r420 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r420:Allrequiredcolumnsmustbepresent,andintherightorder.
+#
+# r421 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r421:DirectGRANTcommandsarenotallowed.
+# r421 | http://i.cig.na/yiLux
+r421   | https://confluence.sys.cigna.com/x/JSyrPg
+#
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | 
+# id   | 
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# Physical Datatype Rules
+r422   | 
+#
+r423   | 
+#
+# r424 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r424 | http://i.cig.na/Rgsrw
+r424   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r425 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r425 | http://i.cig.na/Rgsrw
+r425   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r426 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r426 | http://i.cig.na/Rgsrw
+r426   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r427 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r427 | http://i.cig.na/Rgsrw
+r427   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r428 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r428 | http://i.cig.na/Rgsrw
+r428   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r429 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r429 | http://i.cig.na/Rgsrw
+r429   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r430 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r430 | http://i.cig.na/Rgsrw
+r430   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r431 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r431 | http://i.cig.na/Rgsrw
+r431   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r432 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r432 | http://i.cig.na/Rgsrw
+r432   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r433 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r433 | http://i.cig.na/Rgsrw
+r433   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r434 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r434 | http://i.cig.na/Rgsrw
+r434   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r435 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r435 | http://i.cig.na/Rgsrw
+r435   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r436 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r436 | http://i.cig.na/Rgsrw
+r436   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r437 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r437 | http://i.cig.na/Rgsrw
+r437   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r438 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r438 | http://i.cig.na/Rgsrw
+r438   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r439 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r439 | http://i.cig.na/Rgsrw
+r439   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r440 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r440 | http://i.cig.na/Rgsrw
+r440   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r441 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r441 | http://i.cig.na/Rgsrw
+r441   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r442 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r442 | http://i.cig.na/Rgsrw
+r442   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r443 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r443 | http://i.cig.na/Rgsrw
+r443   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r444 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r444 | http://i.cig.na/Rgsrw
+r444   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r456 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r456 | http://i.cig.na/Rgsrw
+r456   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r454 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r454 | http://i.cig.na/Rgsrw
+r454   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r445 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r445 | http://i.cig.na/Rgsrw
+r445   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r446 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r446 | http://i.cig.na/Rgsrw
+r446   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+# r447 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r424-r447,r454,r456:Datatypesshouldmatchwhattheclasswordcallsfor.
+# r447 | http://i.cig.na/Rgsrw
+r447   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+r450   | https://confluence.sys.cigna.com/x/MyyrPg
+#
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r448   | 
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# Redshift-specific rules
+r449   | https://confluence.sys.cigna.com/x/eVerPg
+#
+r451   | https://confluence.sys.cigna.com/x/mlerPg
+#
+r452   | https://confluence.sys.cigna.com/x/v1erPg
+#
+r453   | https://confluence.sys.cigna.com/x/1VerPg
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r455   | 
+#
+r457   | https://confluence.sys.cigna.com/x/PiyrPg
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | 
+# id   | 
+# -----+---+----+---------+----------------+-----------------------------------------------------------
+#
+# DML Rules
+# r500 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r500:Donotusecrossjoins
+# r500 | http://i.cig.na/Tiox6
+r500   | https://confluence.sys.cigna.com/x/dSyrPg
+#
+# r501 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r501:INClausesshould20orlessitems.
+# r501 | http://i.cig.na/8ZYNk
+r501   | https://confluence.sys.cigna.com/x/eSyrPg
+#
+# r502 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r502:Checkleftjoinrightcolumn
+# r502 | http://i.cig.na/vxOil
+r502   | https://confluence.sys.cigna.com/x/hCyrPg
+#
+# r503 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r503:CheckMultisetVolatiletables
+# r503 | http://i.cig.na/anSAA
+r503   | https://confluence.sys.cigna.com/x/kyyrPg
+#
+# r504 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r504:UsetheCOALESCEfunctionratherthantheNVLfunction.
+# 11/09/21 Disabling this rule due to lack of compelling value.
+#
+# r505 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r505:Checkfortoomanylines
+# r505 | http://i.cig.na/L3xL3
+r505   | https://confluence.sys.cigna.com/x/nSyrPg
+#
+# r506 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r506:InconsistentAlias
+# r506 | http://i.cig.na/1RCYQ
+r506   | https://confluence.sys.cigna.com/x/oiyrPg
+#
+#
+# r507 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r507:AvoidprojectingSelect*
+# 09/28/21 I asked Srini if he wants to keep this rule.
+# 10/14/21 No response, so I will disable this rule now.
+#
+# r508 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r508:WhereclausesonUpdatestatements
+# r508 | http://i.cig.na/lb6TY
+r508   | https://confluence.sys.cigna.com/x/riyrPg
+#
+# r509 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r509:ExcessRelationalSources
+# r509 | http://i.cig.na/EiGuA
+r509   | https://confluence.sys.cigna.com/x/syyrPg
+#
+r510   | https://confluence.sys.cigna.com/x/91arPg
+#
+# -----+------------------------------------------------------------------------------------------------
+# ESP Rules
+# r701 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r701:AnESPINVOKEcommandmustcontainaproperAPPLIB.
+# r701 | http://i.cig.na/C7WHl
+r701   | https://confluence.sys.cigna.com/x/ojyrPg
+#
+# r702 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r702:EveryESPjobshouldspecifyanAPPL_ID,andshouldcorrespondtotheWLDfilename.
+# r702 | http://i.cig.na/ADy1W
+r702   | https://confluence.sys.cigna.com/x/3yyrPg
+#
+# r703 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r703:AnESPAPPLnameshouldbeexactly8characters.
+# r703 | http://i.cig.na/gFDve
+r703   | https://confluence.sys.cigna.com/x/4yyrPg
+#
+# r704 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r704:AnESPBUC$codemustbevalid.
+# r704 | http://i.cig.na/qHYnW
+r704   | https://confluence.sys.cigna.com/x/6CyrPg
+#
+# r705 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r705:AnESPAPPLnameshouldcorrespondtothetargetenvironment.
+# r705 | http://i.cig.na/pcSDY
+r705   | https://confluence.sys.cigna.com/x/7SyrPg
+#
+# r706 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r706:AnESPjobmustspecifybothAPPLSTARTandAPPLEND.
+# r706 | http://i.cig.na/d9Wel
+r706   | https://confluence.sys.cigna.com/x/8iyrPg
+#
+# r707 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r707:DOCMEMproperlydefinedineachjob
+# r707 | http://i.cig.na/HGQcX
+r707   | https://confluence.sys.cigna.com/x/9SyrPg
+#
+# r708 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r708:ESPjobnamesshouldbe%3C=65chars,recommended%3C=23chars
+# r708 | http://i.cig.na/MlTOn
+r708   | https://confluence.sys.cigna.com/x/_SyrPg
+#
+# r709 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r709:EveryESPstepnamemuststartwithC1orNC
+# r709 | http://i.cig.na/WbZv0
+r709   | https://confluence.sys.cigna.com/x/-iyrPg
+#
+# r710 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r710:EveryESPstepnamemusthaveavalidBUCassociation
+# r710 | http://i.cig.na/iIHha
+r710   | https://confluence.sys.cigna.com/x/Ay2rPg
+#
+# r711 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r711:EveryESPjobfilemustspecifyatleast1agentname
+# r711 | http://i.cig.na/didT0
+r711   | https://confluence.sys.cigna.com/x/Ei2rPg
+#
+# r712 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r712:EveryESPstepmustspecifyafrequency
+# r712 | http://i.cig.na/hLRaR
+r712   | https://confluence.sys.cigna.com/x/Hi2rPg
+#
+# r713 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r713:EveryESPstepmustspecifyausername
+# r713 | http://i.cig.na/V7wZU
+r713   | https://confluence.sys.cigna.com/x/Ji2rPg
+#
+# r714 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r714:EveryESPstepmustscriptorcommandname.
+# r714 | http://i.cig.na/f6lTh
+r714   | https://confluence.sys.cigna.com/x/Ky2rPg
+#
+# r715 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r715:ESPjobARGSmustbeconsistentwiththeenvironment.
+# r715 | http://i.cig.na/gC2mp
+r715   | https://confluence.sys.cigna.com/x/Ly2rPg
+#
+r716   | https://confluence.sys.cigna.com/x/Ny2rPg
+#
+# r717 | https://confluence.sys.cigna.com/display/AZ/UN_RE+-+Reference+for+Specific+Rules#UN_REReferenceforSpecificRules-r717:EveryESPjobmustspecifyaBUCcodedependencyatthetoplevel.
+# r717 | http://i.cig.na/ogIPE
+r717   | https://confluence.sys.cigna.com/x/PS2rPg
+#
+r718   | https://confluence.sys.cigna.com/x/NVerPg

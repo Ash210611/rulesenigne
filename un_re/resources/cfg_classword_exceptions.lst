@@ -1,0 +1,21 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_classword_exceptions.lst
+#
+# List of valid exceptions to data modeling classwords, such as TIN, EIN and SSN
+#
+# physical_nm | logical_nm                                      
+# ----------- | ----------------------------------------------- 
+AMI           | Alternate Member Identifier                     
+ASA           | Annualized Savings Amount                       
+DCN           | Document Control Number                         
+EIN           | Employer Identification Number                  
+EUI           | Experience Unit Identifier                      
+GCN           | Generic Code Number                             
+GPI           | Generic Product Identifier                      
+ITIN          | Individual Taxpayer Identification Number       
+LOINC         | Logical Observation Identifiers Names and Codes 
+NDC           | National Drug Code                              
+NPI           | National Provider Identifier                    
+PID           | Patient Identifier                              
+SSN           | Social Security Number                          
+TBLNM         | Table Name                                      
+TIN           | Tax Identification Number                       

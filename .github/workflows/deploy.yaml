@@ -1,0 +1,82 @@
+name: Deploy
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        type: string
+        required: true
+      action:
+        type: string
+        required: true
+
+jobs:
+  Deploy:
+    name: Deploy Workflow
+    runs-on: zilverton-private-x64-ubuntu
+    environment:
+      name: ${{ inputs.environment }}
+    strategy:
+      matrix:
+        module:
+          - base
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set GitHub Read Acess Token
+        run: git config --global url."https://${{ secrets.ORG_REPO_READ_ACCESS }}@github.com".insteadOf "https://github.com"
+
+      - name: Load Environment Variables
+        uses: zilvertonz/shared-github-actions/utility/load-dot-env@v0
+        with:
+          env_name: ${{ inputs.environment }}
+
+      - name: Load Common Variables
+        uses: zilvertonz/shared-github-actions/utility/load-dot-env@v0
+        with:
+          env_name: common
+
+      - name: Authenticate via OIDC Role
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ env.REGION }}
+          role-to-assume: "arn:aws:iam::${{ env.ACCOUNT_NUMBER }}:role/Enterprise/${{ github.event.repository.name }}-deployer"
+
+      - name: Set Workspace Name
+        env:
+          BRANCH_NAME: ${{ github.event_name == 'pull_request' && github.base_ref || (github.event_name == 'delete' && github.event.ref || github.ref_name) }}
+        run: |
+          if [[ "$BRANCH_NAME" == "main" ]]; then
+            echo "WORKSPACE=default" >> $GITHUB_ENV
+          else
+            # Branch name is expected to be feature-JIRA_PROJECT-JIRA_NUMBER-DESCRIPTION
+            # This will parse out JIRA_PROJECT-JIRA_NUMBER to create a workspace for the ticket
+            WORKSPACE_NAME=$(echo "$BRANCH_NAME" | sed 's/\//-/g' | cut -d '-' -f 2-3)
+            echo "WORKSPACE=$WORKSPACE_NAME" >> $GITHUB_ENV
+          fi
+
+      - name: Terraform ${{ inputs.action }}
+        uses: zilvertonz/shared-github-actions/deploy/terragrunt@v0
+        with:
+          module: module/aws/${{ matrix.module }}
+          terraform_action: ${{ inputs.action }}
+          workspace: ${{ env.WORKSPACE }}
+          token: ${{ secrets.ORG_REPO_READ_ACCESS }}
+
+      - name: Login to Amazon ECR                                                         # Need to provide access to silverton-dataops-rules-engine-deployer/GitHubActions
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build, tag, and push the image to Amazon ECR
+        id: build-image
+        env:
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+          ECR_REPOSITORY: ${{ secrets.REPO_NAME }}                                        # Need to store secret repo or pull from the terraform step somehow
+          IMAGE_TAG: latest
+        run: |
+          # Build a docker container and push it to ECR 
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          echo "Pushing image to ECR..."
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"

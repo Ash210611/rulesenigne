@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+# "openshift" is particular about the current user existing in "/etc/passwd", fake that if necessary
+USER_ID=$(id -u)
+GROUP_ID=$(id -u)
+
+if [ x"$USER_ID" != x"0" ]  && [ x"$USER_ID" != x"42531" ]; then
+    echo "jenkins:x:${USER_ID}:${GROUP_ID}:Jenkin user:/home/jenkins:" >> /etc/passwd
+fi
+
+exec "$@"

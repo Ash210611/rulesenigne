@@ -1,0 +1,174 @@
+#
+# This file supplies the long descriptions for each rules
+#
+# These long descriptions are stored separately because they are just text
+# descriptions.   They are stored like a CLOB field, which databases typically 
+# store separately from other columns in the table.
+#
+# ==============================================================================
+#
+#    | Long
+# ID | Description
+#--- | -------------------------------------------------------------------------
+# General Rules
+g001 | All input files must be readable in the UTF-8 code set. This is more flexible than a pure ASCII file, as many foreign-language characters are allowed. Nevertheless, the Rules Engine cannot try to guess every possible different code set. If the file cannot be read by UTF-8, the unexpected characters need to be removed from the file. This rule is required and cannot be turned off, like other more-specific rules can be.
+g002 | To be recognized as a complete SQL statement, all SQL statements must end with a semi-colon.
+g003 | To be scanned further by a Rules Engine, each SQL statement must be a valid SQL statement, with no syntax errors.
+g004 | A default database context must be recognized for each SQL statement, either from a command that sets a default database, or a database qualifier on the object to be created.
+g005 | Teradata Create Table commands must be testable.  Example 1: Columns used in the Primary Index may not be specified to use the COMPRESS attribute.    Teradata insists on that.  Example 2: Columns used in the PARTITION BY clause of a CREATE TABLE command may not be specified to use the COMPRESS attribute.    Teradata insists on that.  Example 3: If you have a CREATE TABLE command with a PARTITION BY clause, there must be columns in the PARTITION BY clause.    (The column list cannot be empty!) Teradata insists on that
+g011 | DDL statements should use a consistent naming convention for the table name and the column names. Either SNAKE_CASE should be used for those names, or CamelCase should be used. Whichever is used, it should be used consistently. Snake case separate parts of a name using an underscore. Camel Case separates parts of a name by a change of capitalization.  Without this general rule, it will not be possible to check other, specific, rules that look at name parts (parts of names).
+g012 | If a Ruleset indicator is specified, it must be one of the valid values.
+#--- | -------------------------------------------------------------------------
+# Specific Rules 
+# The following are table comment rules
+r200 | The definition cannot be null, empty, spaces, or blank.
+r202 | The definition length in a data model must be less than 255 characters, which is the smallest maximum length allowed length for a DBMS used at Cigna. If the definition contains more than the max allowed length and is generated in the ddl, it can cause the
+r204 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r206 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r208 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r209 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r210 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r211 | Since datamodel definitions propagate to the physical definitions, they should be the same.
+r212 | Standards have evolved for table and column business term names. New data design efforts should use the new business terms rather than old business terms. For example, as an international company, we should use international terminology rather than domest
+r214 | Data models must use business terminology in the datamodel name and abbreviations in the physical name. Datamodel names should not be the same as physical names.
+r215 | Each logical attribute in a data model must have a class word.
+r218 | Business terms used in data modeling should be either a prime word, modifier, or classword. Datamodel and physical terms do not use articles (the, is, an, of) or prepositions (in, with, or).
+r220 | Columns with array data should have the array number follow the classword. For example, address line 1 vs address 1 line.
+r223 | Physical names should be inherited from the datamodel name. If a name is hardened, then the abbreviation may have been manually altered from the nsm inheritance.
+r224 | The definition cannot be null, empty, spaces, or blank.
+r225 | The target data type should be the same as the source data type
+r226 | The target data type length should be greater than or equal to the source data type length.
+r227 | Every column in a table must have data lineage. There is at least one data lineage entry for a table column, as noted by the presence of at least one transformation comment text for a column.
+r228 | The definition cannot be null, empty, spaces, or blank.
+r229 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r230 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r231 | Every data model should have at least one data source
+r232 | The definition cannot be null, empty, spaces, or blank.
+r233 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r234 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r235 | The internal name for a data model must correspond to the filename.
+r236 | Every data model must have a NSM attached to ensure abbreviation standards are used.
+r237 | The definition cannot be null, empty, spaces, or blank.
+r238 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r239 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r240 | The definition cannot be null, empty, spaces, or blank.
+r242 | The data-modile definition length in a data model must be less than or equal to 255 characters, which is the smallest maximum length allowed length for a DBMS used at Cigna.
+r241 | The table comment cannot be null, empty, spaces, blank, or missing - all tables should have a comment.
+r243 | Table comments must be less than or equal to 255 characters, which is the smallest maximum length allowed length for a DBMS used at Cigna.
+r244 | A data model entity name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r247 | Table comments should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~,  etc).
+#
+# The following are table name rules
+r245 | A table name should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~,   etc).
+r246 | A data model table name, column name, or definition, should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~, etc). Datamodel names drive the generation of physical names. If generated in the ddl, bad characters can
+r248 | Datamodel names drive the generation of physical names. A datamodel name with underscores can generate the wrong name in the physical model and ddl. Only physical names should contain underscores.
+r249 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r250 | A definition should be a full sentence, not simply a restatement of the datamodel or physical name
+r251 | Since datamodel definitions propagate to the physical definitions, they should be the same.
+r253 | Table names should not use obsolete business terms.   Standards have evolved for table and column business term names. New data design efforts should use the new business terms rather than old business terms.
+r254 | Data models must use business terminology in the datamodel name, and abbreviations in the physical name. Datamodel names should not be the same as physical names.
+r255 | Every table should be represented in a subject area diagram.
+r256 | The category of data contained within a table or data asset.
+r257 | Business terms used in data modeling should be either a prime word, modifier, or classword. Datamodel and physical terms do not use articles (the, is, an, of) or prepositions (in, with, or).
+r258 | Business terms used in data modeling should be either a prime word, modifier, or classword. Datamodel and physical terms do not use articles (the, is, an, of) or prepositions (in, with, or).
+r259 | Data Model entity names must be unique. Attribute names within an entity must also be unique.
+r261 | Physical names should be inherited from the datamodel name. If a name is hardened, then the abbreviation may have been manually altered from the nsm inheritance.
+r262 | Every parent table should have a unique [Foreign Key] relationship to a child table.
+r300 | The table physical name must be 128 characters or less.  Although some databases and file systems allow up to 255 characters, some Cigna tools still have a 30 character limit.  If your object name is too long, apply for a new abbreviation.
+r302 | The table physical name must be abbreviated from the datamodel name using standard abbreviation tokens found in Enterprise Naming Standard 2015.
+r304 | Table physical name not found in CCW_BASE.  This is informational only for projects using CCW_BASE as a reference.
+r307 | Hive Create-Table-As-Select commands must specify table names that start with TEMP_.  Most other rules are skipped for Hive CTAS tables, because there are no comments and no datatypes specified by CTAS commands.
+#
+# The following are column comment rules
+r201 | Column comments cannot be null, empty, spaces, blank, or missing - each column should have a comment.
+r203 | Column comments must be less than 256 characters, which is the smallest maximum length allowed length for a DBMS used at Cigna.
+r207 | A column comment should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~,  etc).
+r417 | A comment should unique across the columns of a table.  For one table, there cannot be two or more columns with the same comment.  
+#
+# The following are column name rules
+r205 | Column names should not contain bad characters (Ex. Single quote, double quote, 2 underscores together, tab, ~,  etc).
+r213 | Standards have evolved for table and column business term names. New data design efforts should use the new business terms rather than old business terms.
+r216 | Each physical column name must have an approved classword abbreviation
+r217 | Some business terms have a built-in class word.  As such, special abbreviations have been created for these terms so that the classword is not duplicated.   For example, TIN is the abbreviation for Tax Identification Number.
+r219 | Business terms used in data modeling should be either a prime word, modifier, or classword. Datamodel and physical terms do not use articles (the, is, an, of) or prepositions (in, with, or).
+r221 | Columns with array data should have the array number follow the classword.  For example, address line 1 vs address 1 line.
+r301 | The column physical name must be 128 characters or less.  Although some databases and file systems allow up to 255 characters, some Cigna tools still have a 30 character limit, so this is also the Enterprise standard.  Apply for a new abbreviation if you need one.
+r303 | The column physical name must be abbreviated from the datamodel name using standard abbreviation tokens found in Enterprise Naming Standard 2015.
+r305 | Column physical name not found in CCW_BASE.  This is informational only for projects using CCW_BASE as a reference.
+r306 | Enterprise standard for Code datatype (_CD) is VARCHAR(10).  This allows for the conformed code process.  Some variations are allowed, if they are reviewed and approved.
+r414 | Columns cannot use the IDENTITY data type. 
+r418 | Every table must have a primary key as the first column where the column name is the name of the table plus the class word KEY as the final token. 
+r419 | Date or Timestamp attribute names are paired as shown in this list: 1) Effective Date/Expiration Date, 2) Effective Date/Termination Date, 3) Effective Timestamp/Expiration Timestamp, 4) Effective Timestamp/Termination Timestamp, 5) Begin Date/End Date, 6) Begin Timestamp/End Timestamp, 7) Start Date/Cancel Date, 8) Start Timestamp/Cancel Timestamp
+r420 | Tables must include certain audit columns in a certain order.
+#
+# The following rules run during the final, cross-referencing phase
+r260 | Data Model table names must be unique. Column names within a table must also be unique.
+r299 | Each column should use the same datatype and size in all tables.
+#
+r401 | Create Table commands must include the following key words in the command: NO AFTER JOURNAL, NO BEFORE JOURNAL.  This rules checks that all expected content is present pertaining to table storage.
+r402 | No unexpected content should be found. (All content should be expected) Create Table commands must not include the FALLBACK attribute. It is Ok to say NO FALLBACK. If the Create Table command includes that it will actually be removed, because the Teradata Intelliflex technology used at Cigna will make the decision whether to implement Fallback or not.   Nevertheless, we do not want to explicitly specify FALLBACK. Also, transient tables may not be defined.    Transient tables are recognized when the following words are seen: VALIDTIME, TRANSACTIONTIME
+r403 | Create Table commands must also include the following key words in the command: PRIMARY INDEX  In other words, a primary index must be defined for each table.
+r405 | When collecting statistics on a table, all the columns for collecting statistics must be consolidated into a single statement.   That way the server only needs to make 1 pass through the table.  If you collect statistics on 5 columns with 5 commands, that would require 5 passes, which takes longer.  It is so important that we avoid wasting deployment time unnecessarily that this is classified as an error. 
+r406 | Views must be created with the clause: LOCKING ROW FOR ACCESS.  Teradata allows a few variations on the syntax.  Some variation of the access clause must be found for views. 
+r407 | A simple ALTER TABLE command may not be used.  While it is a valid command to Teradata, there are performance problems associated with altering tables to add and drop columns.  Certain Alter Table commands are allowed..., if they are supporting foreign key constraints.   See the chapter later in this user guide for more info about how to Alter Tables.  All other kinds of Alter Table commands are not allowed.
+r408 | Backup table names must use the _BAK suffix.
+r411 | The Rules Engine will report an error if it sees a view being created in a database designated for tables.  And vice versa – tables should not be created in a database designated for views.  
+r412 | Do not insert with Select *.
+r413 | When creating a view, the name of the view should include the name of the database where the view should be created. 
+r415 | The Rules Engine will report a warning if it sees a BASE table defined as MULTISET.   Exceptions have been made for certain tables, so this is not classified as an ERROR.
+r416 | DDL scripts should use simple plain text, and not use control characters. 
+r421 | Only the ISG DBAs are allowed to manage permissions.
+# 
+# The following rule checks table storage
+r308 | If a Hive table specifies how to store the file, it should be stored using the PARQUE storage method. When this rule is developed, it will be classified as an Error.
+# DML Rules
+r500 | Please do not use Cross Joins.  A Cross Join is a Cartesian product.  It will join every row from the first table to every row in the second table.  You might intend to filter out the extra rows later with a Where clause, but it causes extra work.  Use an equi-join, or a subquery to only select the necessary rows to start with.
+r501 | When 20 or more values specified in an IN clause, it will help loading those values in a skinny table and join the table instead of IN clause.  Use Left/Right join instead of IN/NOT IN.
+r502 | When using LEFT JOIN, if the right table column is added to the WHERE clause (not null/value based), LEFT JOIN is implemented as INNER JOIN.  In these cases, use INNER JOIN or move the right table WHERE clause to ON clause.
+r503 | Volatile tables should be created either as MULTISET, or as a SET table with a unique primary index to enforce the uniqueness.  To enforce this rule, a specific table set type must be explicitly specified.   
+r504 | Use COALESCE instead of NVL. Both offer similar functionality but COALESCE is suggested with TD
+r505 | Excessively long SQL statements are prone to error, difficult to maintain, and likely a substitute for a better design.
+r404 | All tables should have a Primary Index.  Not all table need to DEFINE a Primary Key.    (Many would agree that alll tables SHOULD have a Primary Key.   Some teams may choose to not check for Uniqueness.) Teradata uses the Primary Index to improve parallelism by distributing rows evenly across all available AMPs.
+r506 | Table aliasing helps in simplifying the query coding as long table names can be replaced by Alias while referring columns.  Table alias replaces the table name with alias name for that specific query.  When using alias for a table, always use the alias while referring columns in Select, Filter, Join clauses.  Using original table name in place of alias will not throw error but will result in cross join of the same table (causes query spool out)
+# 
+# r507 | Avoid using SELECT * in queries unless all columns form the table are required.  For queries, using SELECT * brings all column in the spool. Instead specifically mention the list of columns being used in the query.  Even when all columns are needed, it is best to list them specifically, to avoid unexpected impact from possible changes to the source in the future.
+#
+r508 | Specify data filters (WHERE clause) when updating data rows in table.  Updates without filters tend to lock whole table, making table data inaccessible to others.
+r509 | This rule is related to the idea of rule (-c) to avoid cross joins, aka Cartesian products.    In a Cartesian product, all the rows from one table are joined to all the rows of a second table.    That combination could explode the workload and space usage, and nobody has identified an application that actually needs it, so it is worthwhile to try to avoid Cartesian products.
+#
+#
+r422 | A table with REFERENCE in the name should probably be either put into a Code Set or made an application table in the appropriate subject area, even if the this contains business-supplied data.
+r423 | The termination date or timestamp (or Expiration, End or Cancel) as part of the unique index may be incorrect because this would allow for multiple effective, begin or start dates with different termination dates.
+r424 | The class word Count indicates an integer data type that can be summed.
+r425 | Numeric dollar or currency data. Amount class word (AMT) should have data type Number
+r426 | A calendar date containing year, month and day. Date class word (DT) should have data type date.
+r427 | A statement which defines or explains something. Many times used in conjunction with a Code attribute. Description class word (DESC) should have data type varchar(255).
+r428 | A value (number or string) uniquely assigned to represent a specific occurrence of an element. Examples include a Software Version, Person, and Client. Identifier class word (ID) should have data type number or varchar.
+r429 | A single character that represent two mutually exclusive (valdtn_ref_STD_SET_NM, CLSS_WORD_LGCL_NM, CRET_TS, CLSS_WORD_PHY_NM, CLSS_WORD_DESC, CLSS_WORD_LGCL_DATA_TY_CD) values (true or false). Indicator class word (IND) should have data type char(1).
+r430 | For use strictly for key fields that are an unintelligent\system generated unique identifier. The classword of KEY will be used (rather than ID or some other distinguishing convention) to denote the unintelligent\system generated Primary/Foreign key. Key class word (KEY) should have data type char(32) to allow for MD5 values.
+r431 | A value which may represent, on the low end, the minimal or lower allowable amount; or, on the high end, the maximum or greatest allowable amount. The use of amount in this context may infer currency, though the classword may be applied to other instances. Limit class word (LMT) should have data type number
+r432 | A set of characters that are normally printed or displayed as one horizontal row. For repeating groups use a sequential number after the class word. Example: ADDR_LN_1, ADDR_LN_2 Line class word (LN) should have data type varchar().
+r433 | The proper term for a person, place or thing. Name class word (NM) should have data type varchar(100) or varchar(255).
+r434 | Normally numeric data used to identify position, distinguish between items in a set, or do arithmetic computations on. Exceptions are for commonly used names like Policy Number, Telephone Number, and Social Security Number. Number class word (NUM) should have data type varchar() or number.
+r435 | An image, document, multimedia, BLOB. Object class word (OBJ) should have data type BLOB.
+r436 | The numeric ratio of 2 numbers multiplied by 100. Example: 75%. Percent class word (PCT) should have data type number.
+r437 | Any proportion or share in relation to a whole. Example: .7500 Percentage class word (PCTG) should have data type number.
+r438 | A value between 0 - 100 that indicates the percent of a distribution that is equal to it or below it. For example, a score at the 95th percentile is equal to or better than 95 percent of the scores. Percentile class word (PCTL) should have data type number.
+r439 | Reflects a phrase that modifies the meaning of another word or business phrase. Qualifier class word (QUALR) should have data type string.
+r440 | Reflects a specified number or amount (non-currency). Quantity class word (QTY) should have data type number.
+r441 | Reflects the measure of dispersion equal to the difference or interval between the smallest and largest of a set of quantities. Range class word (RNG) should have data type number.
+r442 | An amount per unit multiplier that can change over time. Rating class word (RT) should have data type number.
+r443 | A fraction indicating a proportion between two like things. Ratio class word (RTO) should have data type number.
+r444 | Unstructured data such as a note, free form comments or an explanation. Text class word (TXT) should have data type varchar().
+r445 | Time stated in hours, minutes and seconds. Time class word (TM) should have data type time.
+r446 | A combination of Date and Time. Timestamp class word (TS) should have data type datetime or timestamp.
+r447 | A calendar year. Year class word (YR) should have data type number.
+r448 | Starting in 2017, it was decided to only use Semantic View in table names.  See CCW Teradata Standards, section 5.5 View.
+r449 | Redshift table should always have a Distribution Key DISTKEY.  
+r451 | Redshift column Prior Data Store PDS_CRET_TS, if used, must also have PDS_UPDT_TS.
+r452 | Redshift column Prior Data Store Channel Source Code is optional (PDS_CHNL_SRC_CD), but it it exists, the table must also have PDS_CRET_TS and PDS_UPDT_TS.
+r453 | Redshift table should always have these audit columns: CRET_TS, UDPT_TS and LOAD_CTL_KEY.
+r455 | A class word must have a modifier.  A class word with no token to the left is invalid.  Example:  column DESC with no modifier should be CLM_DESC or PROD_DESC etc.
+r456 | Classword TY     (Type)        should have data type Varchar().
+r454 | Classword TYP    (Type)        should have data type Varchar().
+#

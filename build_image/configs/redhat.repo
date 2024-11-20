@@ -1,0 +1,65 @@
+#
+# Certificate-Based Repositories
+# Managed by (rhsm) subscription-manager
+#
+# *** This file is auto-generated.  Changes made here will be over-written. ***
+# *** Use "subscription-manager repo-override --help" if you wish to make changes. ***
+#
+# If this file is empty and this system is subscribed consider
+# a "yum repolist" to refresh available repos
+#
+
+[rhel-8-for-x86_64-supplementary-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - Supplementary (RPMs)
+baseurl = https://adcrhelsatcap.sys.cigna.com/pulp/repos/CignaIT/Lower_Environment_N_1_/ccv-os-rhel8-latest/content/dist/rhel8/$releasever/x86_64/supplementary/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+metadata_expire = 1
+enabled_metadata = 1
+
+[CignaIT_RHEL_8_EPEL_EPEL_8]
+name = EPEL 8
+baseurl = https://adcrhelsatcap.sys.cigna.com/pulp/repos/CignaIT/Lower_Environment_N_1_/ccv-os-rhel8-latest/custom/RHEL_8_EPEL/EPEL_8
+enabled = 0
+gpgcheck = 1
+gpgkey = https://adcrhelsatcap.sys.cigna.com/katello/api/v2/repositories/4582/gpg_key_content
+metadata_expire = 1
+enabled_metadata = 0
+
+[rhel-8-for-x86_64-highavailability-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - High Availability (RPMs)
+baseurl = https://adcrhelsatcap.sys.cigna.com/pulp/repos/CignaIT/Lower_Environment_N_1_/ccv-os-rhel8-latest/content/dist/rhel8/$releasever/x86_64/highavailability/os
+enabled = 0
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+metadata_expire = 1
+enabled_metadata = 0
+
+[rhel-8-for-x86_64-baseos-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+baseurl = https://adcrhelsatcap.sys.cigna.com/pulp/repos/CignaIT/Lower_Environment_N_1_/ccv-os-rhel8-latest/content/dist/rhel8/$releasever/x86_64/baseos/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+metadata_expire = 1
+enabled_metadata = 1
+
+[rhel-8-for-x86_64-appstream-rpms]
+name = Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+baseurl = https://adcrhelsatcap.sys.cigna.com/pulp/repos/CignaIT/Lower_Environment_N_1_/ccv-os-rhel8-latest/content/dist/rhel8/$releasever/x86_64/appstream/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+metadata_expire = 1
+enabled_metadata = 1
+
+[satellite-tools-6.9-for-rhel-8-x86_64-rpms]
+name = Red Hat Satellite Tools 6.9 for RHEL 8 x86_64 (RPMs)
+baseurl = https://adcrhelsatcap.sys.cigna.com/pulp/repos/CignaIT/Lower_Environment_N_1_/ccv-os-rhel8-latest/content/dist/layered/rhel8/x86_64/sat-tools/6.9/os
+enabled = 1
+gpgcheck = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release
+metadata_expire = 1
+enabled_metadata = 1
+

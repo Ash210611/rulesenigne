@@ -1,0 +1,15 @@
+tmp/
+#*.ini
+logs/
+__pycache__/
+.idea/
+pytest.log
+*.iml
+*.swp
+pleasew
+Rules_Engine.log
+
+# Entries below this point are managed by Please (DO NOT EDIT)
+plz-out
+.plzconfig.local
+/poetry.lock

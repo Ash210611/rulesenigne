@@ -1,0 +1,98 @@
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ETL_HASH_VAL
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ETL_NK_HASH_VAL
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.HLTHPLN_IK
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.CLM_STAT
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.DRG_TITLE
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.OPERL_MRKT
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REGLTY_MRKT
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.PAR_FLG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.RNDRG_PROV_PAR_FLG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.RNDRG_PROV_BUS_SRC_CITY
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.RNDRG_PROV_BUS_SRC_CNTY
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.RNDRG_PROV_BUS_SRC_STE
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.RNDRG_PROV_BUS_SRC_LAT
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.RNDRG_PROV_BUS_SRC_LONG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ATTND_PROV_PAR_FLG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ATTND_PROV_BUS_SRC_CITY
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ATTND_PROV_BUS_SRC_CNTY
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ATTND_PROV_BUS_SRC_STE
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ATTND_PROV_BUS_SRC_LAT
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ATTND_PROV_BUS_SRC_LONG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REFRG_PROV_PAR_FLG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REFRG_PROV_BUS_SRC_CITY
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REFRG_PROV_BUS_SRC_CNTY
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REFRG_PROV_BUS_SRC_STE
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REFRG_PROV_BUS_SRC_LAT
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r216 : No valid classword found in column name HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.REFRG_PROV_BUS_SRC_LONG
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.TENANT_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.DRG_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.DISCHRG_STAT_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.CLM_SRC_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.FRM_TY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.CLM_FRM_TY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ADMSN_TY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.FCLTY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.FREQ_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.PROV_TAXNMY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ADMSN_SRC_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.BILL_CLSS_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.CLM_STAT_TY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r306 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.CLM_PAYEE_TY_CD using classword CD, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r402 : HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2 has unexpected content: MAP=TD_MAP1
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r433 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.PAYOR_NM using classword NM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r433 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.HLTHPLN_NM using classword NM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r433 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ENCNTR_SRC_VENDR_NM using classword NM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r433 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.MBR_LAST_NM using classword NM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r433 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.MBR_FRST_NM using classword NM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r433 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.MBR_MID_NM using classword NM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r445 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ETL_LOAD_DT_TM using classword TM, has a non-standard datatype.
+Filenum, name: 1, tables/this_should_pass.sql
+WARNING-r445 : Column HSETL_WORK.BLUEPRINT_SAMPLE_TABLE_2.ETL_LAST_UPDT_DT_TM using classword TM, has a non-standard datatype.

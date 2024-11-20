@@ -1,0 +1,139 @@
+# This text file specifies how Rulesets adjust the severity for different findings
+#
+# Lines in this file will be ignored if they contain a # sign anywhere on the line.
+#
+# Severities will be managed using a hash data structure.
+# The key for the hash will be the ruleset + the Rule ID + the Normal severity.
+# The returning value of the hash will be the Adjusted Severity.
+# 
+# Please always keep the Adjusted severities LESS severe than the Normal severities.
+# That is important for the report_finding function to report the adjusted message in a meaningful way.
+# In other words, Error > Warning > Notice
+# Please do not use Good for an adjusted severity, because it is never
+# completely good to ignore issues.
+#
+# ----------- | ---- | -------- | --------
+# Key                           | Value
+# ----------- | ---- | -------- | --------
+#             | Rule | Normal   | Adjusted
+# Ruleset     | ID   | Severity | Severity
+# ----------- | ---- | -------- | --------
+TechDebt      | g003 | Error    | Notice
+TechDebt      | r201 | Error    | Notice
+TechDebt      | r205 | Error    | Notice
+TechDebt      | r207 | Error    | Notice
+TechDebt      | r213 | Error    | Notice
+TechDebt      | r216 | Error    | Notice
+TechDebt      | r219 | Error    | Notice
+TechDebt      | r221 | Error    | Notice
+TechDebt      | r241 | Error    | Notice
+TechDebt      | r245 | Error    | Notice
+TechDebt      | r247 | Error    | Notice
+TechDebt      | r258 | Error    | Notice
+TechDebt      | r299 | Error    | Notice
+TechDebt      | r303 | Error    | Notice
+TechDebt      | r306 | Error    | Notice
+TechDebt      | r307 | Error    | Notice
+TechDebt      | r411 | Error    | Notice
+TechDebt      | r412 | Error    | Notice
+TechDebt      | r415 | Error    | Notice
+TechDebt      | r424 | Error    | Notice
+TechDebt      | r425 | Error    | Notice
+TechDebt      | r426 | Error    | Notice
+TechDebt      | r427 | Error    | Notice
+TechDebt      | r428 | Error    | Notice
+TechDebt      | r429 | Error    | Notice
+TechDebt      | r430 | Error    | Notice
+TechDebt      | r431 | Error    | Notice
+TechDebt      | r432 | Error    | Notice
+TechDebt      | r433 | Error    | Notice
+TechDebt      | r434 | Error    | Notice
+TechDebt      | r435 | Error    | Notice
+TechDebt      | r436 | Error    | Notice
+TechDebt      | r437 | Error    | Notice
+TechDebt      | r438 | Error    | Notice
+TechDebt      | r439 | Error    | Notice
+TechDebt      | r440 | Error    | Notice
+TechDebt      | r441 | Error    | Notice
+TechDebt      | r442 | Error    | Notice
+TechDebt      | r443 | Error    | Notice
+TechDebt      | r444 | Error    | Notice
+TechDebt      | r445 | Error    | Notice
+TechDebt      | r446 | Error    | Notice
+TechDebt      | r447 | Error    | Notice
+TechDebt      | r450 | Error    | Notice
+TechDebt      | r456 | Error    | Notice
+TechDebt      | r454 | Error    | Notice
+TechDebt      | r505 | Warning  | Notice
+#             |      |          |
+# Legacy        | r216 | Error    | Notice
+# Legacy        | r306 | Error    | Notice
+#             |      |          |
+ExternalParty | r213 | Error    | Notice
+ExternalParty | r216 | Error    | Notice
+ExternalParty | r258 | Error    | Notice
+ExternalParty | r299 | Error    | Notice
+ExternalParty | r306 | Error    | Notice
+ExternalParty | r424 | Error    | Notice
+ExternalParty | r425 | Error    | Notice
+ExternalParty | r426 | Error    | Notice
+ExternalParty | r427 | Error    | Notice
+ExternalParty | r428 | Error    | Notice
+ExternalParty | r429 | Error    | Notice
+ExternalParty | r430 | Error    | Notice
+ExternalParty | r431 | Error    | Notice
+ExternalParty | r432 | Error    | Notice
+ExternalParty | r433 | Error    | Notice
+ExternalParty | r434 | Error    | Notice
+ExternalParty | r435 | Error    | Notice
+ExternalParty | r436 | Error    | Notice
+ExternalParty | r437 | Error    | Notice
+ExternalParty | r438 | Error    | Notice
+ExternalParty | r439 | Error    | Notice
+ExternalParty | r440 | Error    | Notice
+ExternalParty | r441 | Error    | Notice
+ExternalParty | r442 | Error    | Notice
+ExternalParty | r443 | Error    | Notice
+ExternalParty | r444 | Error    | Notice
+ExternalParty | r445 | Error    | Notice
+ExternalParty | r446 | Error    | Notice
+ExternalParty | r447 | Error    | Notice
+ExternalParty | r450 | Error    | Notice
+ExternalParty | r454 | Error    | Notice
+ExternalParty | r456 | Error    | Notice
+#             |      |          |
+LandingZone   | r213 | Error    | Notice
+LandingZone   | r216 | Error    | Notice
+LandingZone   | r219 | Error    | Notice
+LandingZone   | r221 | Error    | Notice
+LandingZone   | r299 | Error    | Notice
+LandingZone   | r303 | Error    | Notice
+LandingZone   | r306 | Error    | Notice
+LandingZone   | r424 | Error    | Notice
+LandingZone   | r425 | Error    | Notice
+LandingZone   | r426 | Error    | Notice
+LandingZone   | r427 | Error    | Notice
+LandingZone   | r428 | Error    | Notice
+LandingZone   | r429 | Error    | Notice
+LandingZone   | r430 | Error    | Notice
+LandingZone   | r431 | Error    | Notice
+LandingZone   | r432 | Error    | Notice
+LandingZone   | r433 | Error    | Notice
+LandingZone   | r434 | Error    | Notice
+LandingZone   | r435 | Error    | Notice
+LandingZone   | r436 | Error    | Notice
+LandingZone   | r437 | Error    | Notice
+LandingZone   | r438 | Error    | Notice
+LandingZone   | r439 | Error    | Notice
+LandingZone   | r440 | Error    | Notice
+LandingZone   | r441 | Error    | Notice
+LandingZone   | r442 | Error    | Notice
+LandingZone   | r443 | Error    | Notice
+LandingZone   | r444 | Error    | Notice
+LandingZone   | r445 | Error    | Notice
+LandingZone   | r446 | Error    | Notice
+LandingZone   | r447 | Error    | Notice
+LandingZone   | r450 | Error    | Notice
+LandingZone   | r454 | Error    | Notice
+LandingZone   | r456 | Error    | Notice
+#

@@ -1,0 +1,21 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_business_terms.lst
+#
+# A list of logical or physical names such as entities, tables, attributes and columns that 
+# should not be used in a data model. These are names that are less desirable such as 
+# columns that use legacy names not intended for use in the target data model.
+#
+# old_term_txt             | new_term_txt              | comment_txt                             
+# ------------------------ | ------------------------- | ----------------------------------------
+ACCT_SUBTY_2_CD            | PRODT_TY_CD               | Use varchar(30)                         
+BEN_OPT_CD                 | BEN_PLAN_NUM              |                                         
+BRNCH_CD                   | ELGBTY_BRNCH_CD           |                                         
+MAJOR DIAGNOSIS CATEGORY   | MAJOR DIAGNOSTIC CATEGORY |                                         
+MBR_ID                     | LGCY_MBR_NUM              |                                         
+MIDSU_SRC_SYS_CD           | DERV_SRC_SYS_CD           | This attribute may not be needed anymore
+PCP_ID                     | PCP_PROV_ID               | Use varchar 40                          
+PERSN_ELGBTY_ID            | ENTPR_CUST_ID             |                                         
+PORG                       | PROV_ORG                  | DO NOT USE PORG as abbreviation         
+SERVICING PROVIDER         | RENDERING PROVIDER        | Old term vs new term                    
+TAX_ID                     | TIN                       |                                         
+UR_REF_ID                  | AUTHZN_ID                 | Use VARCHAR(40)                         
+ZIP_CD                     | POSTL_CD                  |                                         

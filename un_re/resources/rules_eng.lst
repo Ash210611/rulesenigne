@@ -1,0 +1,19 @@
+#
+# This file will be used for loading the Postgres rules_eng table.
+#
+# This file should only contain 1 record.
+# All lines in this file that contain # will be ignored.
+#
+# rules_eng_nm       | pipeln_nm  | db_ty_cd   | ddl_ty_cd | short_desc 
+# ------------------ | ---------- | ---------- | --------- | -------------------------------
+TERADATA_DDL         | CCW-D      | TERADATA   | DDL       | Developer CCW DDL Rules Engine
+TERADATA_DML         | CCW-D      | TERADATA   | DML       | Developer CCW DML Rules Engine
+HIVE_DDL_RE          | HADOOP-D   | HIVE       | DDL       | Developer HIVE DDL Rules Engine
+PG_RE                | Postgres-D | Postgres   | DDL       | Postgres DDL Rules Engine
+REDSHIFT             | TBD        | Redshift   | DDL       | Amazon Redshift Rules Engine
+ORE                  | TBD        | Oracle     | DDL       | Oracle Rules Engine
+DATABRICKS           | TBD        | DataBricks | DDL       | DataBricks Rules Engine
+SNOWFLAKE            | TBD        | SnowFlake  | DDL       | DataBricks Rules Engine
+DB2_RE               | TBD        | DB2        | DDL       | DB2 Rules Engine
+REDD                 | None       | Multiple   | DDL       | Rules Engine Data Dictionary
+# 

@@ -1,0 +1,225 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_classword_datatypes.lst
+#
+# Purpose: This file will list the allowed datatypes for each classword.
+# 
+# Different Rules Engines can allow different datatypes,
+# so that is part of the key.
+# 
+# The valid Rules Engine Types are 1) ANY, then 2) an engine-specific record,
+# then 3) OTHER.
+# 
+# The function that reads this table will only add a record to its list if
+# it has not accepted one for that Classword yet, so list them in that 1, 2, 3
+# order.
+# 
+# If multiple records contain the same classword (such as NUM), then The Rules
+# Engine will give priority to the first record that matches the
+# RULES_ENGINE_TYPE, so list the OTHER record last.
+# 
+# You will notice that Classwords can be either logical or physical, so for
+# example, both DT and Date must be specified.    But they are not 1:1
+# so most but not all the logical records look like duplicates of the physical
+# records, for example for Time and Timestamp.
+# 
+# When the length for a datatype is specified, like VARCHAR(10), then the
+# rule will check for that exact length.  When the datatype does not have a
+# specific length, like simply VARCHAR, then any length for that datatype
+# would be accepted.
+# 
+#
+# classword_id   | rules_engine_typ  | datatypes_txt                                                    
+# -------------- | ----------------- | -----------------------------------------------------------------
+Amount           | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+Amount           | ORE               | NUMBER                                                           
+Amount           | OTHER             | DECIMAL                                                          
+AMT              | TERADATA_DDL      | DECIMAL, NUMERIC, INT, INTEGER                                   
+AMT              | HIVE_DDL_RE       | DECIMAL, DOUBLE, INT, BIGINT                                     
+AMT              | ORE               | NUMBER                                                           
+AMT              | DATABRICKS        | DECIMAL, DOUBLE                                                  
+AMT              | OTHER             | DECIMAL                                                          
+CD               | DATABRICKS        | STRING, VARCHAR(10)                                              
+CD               | ORE               | VARCHAR2(10)                                                     
+CD               | OTHER             | VARCHAR(10)                                                      
+CNT              | TERADATA_DDL      | BIGINT, INTEGER, INT, DECIMAL                                    
+CNT              | ORE               | NUMBER                                                           
+CNT              | HIVE_DDL_RE       | BIGINT, INTEGER, INT, DECIMAL                                    
+CNT              | OTHER             | INTEGER, INT, DECIMAL                                            
+Code             | ORE               | VARCHAR2(10)                                                     
+Code             | OTHER             | VARCHAR(10)                                                      
+CODE             | DATABRICKS        | STRING, VARCHAR(10)                                              
+Count            | ORE               | NUMBER                                                           
+Count            | TERADATA_DDL      | BIGINT, INTEGER, INT, DECIMAL                                    
+Count            | HIVE_DDL_RE       | BIGINT, INTEGER, INT, DECIMAL                                    
+Count            | OTHER             | INTEGER, INT, DECIMAL                                            
+Date             | HIVE_DDL_RE       | DATE, TIMESTAMP, VARCHAR                                         
+Date             | DATABRICKS        | STRING, DATE                                                     
+Date             | ORE               | DATE, TIMESTAMP, VARCHAR2                                        
+Date             | OTHER             | DATE                                                             
+DESC             | DATABRICKS        | STRING, VARCHAR(255)                                             
+DESC             | ORE               | VARCHAR2(255)                                                    
+DESC             | OTHER             | VARCHAR(255)                                                     
+Description      | ORE               | VARCHAR2(255)                                                    
+Description      | DATABRICKS        | STRING, VARCHAR(255)                                             
+Description      | OTHER             | VARCHAR(255)                                                     
+DT               | ORE               | DATE, TIMESTAMP, VARCHAR2                                        
+DT               | DATABRICKS        | STRING, DATE                                                     
+DT               | HIVE_DDL_RE       | DATE, TIMESTAMP, VARCHAR                                         
+DT               | OTHER             | DATE                                                             
+GeographyPoint   | ORE               | VARCHAR2                                                         
+GeographyPoint   | OTHER             | VARCHAR                                                          
+GPT              | ORE               | VARCHAR2                                                         
+GPT              | OTHER             | VARCHAR                                                          
+ID               | DAMODRE           | INTEGER, INT, VARCHAR, BIGINT                                    
+ID               | TERADATA_DDL      | INTEGER, INT, VARCHAR, BIGINT                                    
+ID               | ORE               | NUMBER                                                           
+ID               | DATABRICKS        | BIGINT, INTEGER, STRING, VARCHAR                                 
+ID               | OTHER             | INTEGER, INT, VARCHAR                                            
+Identifier       | DAMODRE           | INTEGER, INT, VARCHAR, BIGINT                                    
+Identifier       | DATABRICKS        | BIGINT, INTEGER, STRING, VARCHAR                                 
+Identifier       | TERADATA_DDL      | INTEGER, INT, VARCHAR, BIGINT                                    
+Identifier       | ORE               | NUMBER                                                           
+Identifier       | OTHER             | INTEGER, INT, VARCHAR                                            
+IND              | PG_RE             | CHAR(1), BOOLEAN, SMALLINT, INT, INTEGER                         
+IND              | ORE               | CHAR(1), NUMBER                                                  
+IND              | TERADATA_DML      | CHAR(1), BYTEINT, SMALLINT, INT, INTEGER                         
+IND              | TERADATA_DDL      | CHAR(1), BYTEINT, SMALLINT, INT, INTEGER                         
+IND              | REDSHIFT_RE       | CHAR(1), SMALLINT, INT2, INT, INTEGER, INT4                      
+IND              | HIVE_DDL_RE       | CHAR(1), TINYINT, SMALLINT, INT, INTEGER                         
+IND              | DATABRICKS        | STRING, CHAR(1)                                                  
+IND              | OTHER             | CHAR(1)                                                          
+Indicator        | TERADATA_DML      | CHAR(1), BYTEINT, SMALLINT, INT, INTEGER                         
+Indicator        | DATABRICKS        | STRING, CHAR(1)                                                  
+Indicator        | TERADATA_DDL      | CHAR(1), BYTEINT, SMALLINT, INT, INTEGER                         
+Indicator        | HIVE_DDL_RE       | CHAR(1), TINYINT, SMALLINT, INT, INTEGER                         
+Indicator        | ORE               | CHAR(1), NUMBER                                                  
+Indicator        | REDSHIFT_RE       | CHAR(1), SMALLINT, INT2, INT, INTEGER, INT4                      
+Indicator        | PG_RE             | CHAR(1), BOOLEAN, SMALLINT, INT, INTEGER                         
+Indicator        | OTHER             | CHAR(1)                                                          
+Key              | ORE               | CHAR(32), NUMBER                                                 
+Key              | DATABRICKS        | BIGINT, CHAR(32), STRING                                         
+Key              | OTHER             | CHAR(32), BIGINT                                                 
+KEY              | ORE               | CHAR(32), NUMBER                                                 
+KEY              | DATABRICKS        | BIGINT, CHAR(32), STRING                                         
+KEY              | OTHER             | CHAR(32), BIGINT                                                 
+Limit            | ORE               | NUMBER                                                           
+Limit            | DATABRICKS        | STRING, VARCHAR                                                  
+Limit            | OTHER             | DECIMAL, INTEGER, INT                                            
+Line             | ORE               | VARCHAR2                                                         
+Line             | OTHER             | VARCHAR                                                          
+LMT              | ORE               | NUMBER                                                           
+LMT              | OTHER             | DECIMAL, INTEGER, INT                                            
+LN               | DATABRICKS        | STRING, VARCHAR                                                  
+LN               | ORE               | VARCHAR2                                                         
+LN               | OTHER             | VARCHAR                                                          
+Name             | DATABRICKS        | STRING, VARCHAR(100), VARCHAR(255)                               
+Name             | ORE               | VARCHAR2(100), VARCHAR2(255)                                     
+Name             | OTHER             | VARCHAR(100), VARCHAR(255)                                       
+NM               | DATABRICKS        | STRING, VARCHAR(100), VARCHAR(255)                               
+NM               | ORE               | VARCHAR2(100), VARCHAR2(255)                                     
+NM               | OTHER             | VARCHAR(100), VARCHAR(255)                                       
+NUM              | ORE               | NUMBER, VARCHAR2                                                 
+NUM              | TERADATA_DDL      | DECIMAL, INTEGER, INT, NUMBER, NUMERIC, BIGINT, SMALLINT, VARCHAR
+NUM              | DATABRICKS        | STRING, DECIMAL, INTEGER, INT, VARCHAR, BIGINT, SMALLINT         
+NUM              | OTHER             | DECIMAL, INTEGER, INT, VARCHAR, BIGINT, SMALLINT                 
+Number           | TERADATA_DDL      | DECIMAL, INTEGER, INT, NUMBER, NUMERIC, BIGINT, SMALLINT, VARCHAR
+Number           | DATABRICKS        | STRING, DECIMAL, INTEGER, INT, VARCHAR, BIGINT, SMALLINT         
+Number           | ORE               | NUMBER, VARCHAR2                                                 
+Number           | OTHER             | DECIMAL, INTEGER, INT, VARCHAR, BIGINT, SMALLINT                 
+OBJ              | ORE               | BLOB, BINARY                                                     
+OBJ              | OTHER             | BLOB, BINARY, CLOB                                               
+Object           | ORE               | BLOB, BINARY                                                     
+Object           | OTHER             | BLOB, BINARY, CLOB                                               
+PCT              | ORE               | NUMBER                                                           
+PCT              | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+PCT              | OTHER             | DECIMAL                                                          
+PCTG             | ORE               | NUMBER                                                           
+PCTG             | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+PCTG             | OTHER             | DECIMAL                                                          
+PCTL             | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+PCTL             | ORE               | NUMBER                                                           
+PCTL             | OTHER             | DECIMAL                                                          
+Percent          | ORE               | NUMBER                                                           
+Percent          | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+Percent          | OTHER             | DECIMAL                                                          
+Percentage       | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+Percentage       | ORE               | NUMBER                                                           
+Percentage       | OTHER             | DECIMAL                                                          
+Percentile       | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+Percentile       | ORE               | NUMBER                                                           
+Percentile       | OTHER             | DECIMAL                                                          
+QTY              | HIVE_DDL_RE       | NUMERIC, DECIMAL, DOUBLE, BIGINT                                 
+QTY              | DAMODRE           | NUMERIC, DECIMAL, BIGINT                                         
+QTY              | ORE               | NUMBER                                                           
+QTY              | TERADATA_DDL      | NUMERIC, DECIMAL, BIGINT                                         
+QTY              | OTHER             | DECIMAL, DOUBLE                                                  
+Qualifier        | ORE               | VARCHAR2                                                         
+Qualifier        | OTHER             | VARCHAR                                                          
+QUALR            | ORE               | VARCHAR2                                                         
+QUALR            | OTHER             | VARCHAR                                                          
+Quantity         | HIVE_DDL_RE       | NUMERIC, DECIMAL, DOUBLE, BIGINT                                 
+Quantity         | ORE               | NUMBER                                                           
+Quantity         | TERADATA_DDL      | NUMERIC, DECIMAL                                                 
+Quantity         | DAMODRE           | NUMERIC, DECIMAL, BIGINT                                         
+Quantity         | OTHER             | DECIMAL, DOUBLE                                                  
+Range            | ORE               | NUMBER                                                           
+Range            | TERADATA_DDL      | INTEGER, INT, NUMERIC, DECIMAL                                   
+Range            | OTHER             | INTEGER, INT, DECIMAL                                            
+Rate             | ORE               | NUMBER                                                           
+Rate             | TERADATA_DDL      | INTEGER, INT, NUMERIC, DECIMAL                                   
+Rate             | OTHER             | INTEGER, INT, DECIMAL                                            
+Ratio            | TERADATA_DDL      | FLOAT, NUMERIC, DECIMAL                                          
+Ratio            | ORE               | NUMBER                                                           
+Ratio            | OTHER             | DECIMAL                                                          
+RNG              | ORE               | NUMBER                                                           
+RNG              | TERADATA_DDL      | INTEGER, INT, NUMERIC, DECIMAL                                   
+RNG              | OTHER             | INTEGER, INT, DECIMAL                                            
+RT               | ORE               | NUMBER                                                           
+RT               | TERADATA_DDL      | INTEGER, INT, NUMERIC, DECIMAL                                   
+RT               | OTHER             | INTEGER, INT, DECIMAL                                            
+RTO              | ORE               | NUMBER                                                           
+RTO              | TERADATA_DDL      | FLOAT, NUMERIC, DECIMAL                                          
+RTO              | OTHER             | DECIMAL                                                          
+SEQ              | ORE               | NUMBER, VARCHAR2                                                 
+Sequence         | ORE               | NUMBER, VARCHAR2                                                 
+Text             | ORE               | VARCHAR2                                                         
+Text             | DATABRICKS        | STRING, VARCHAR                                                  
+Text             | OTHER             | VARCHAR                                                          
+Time             | ORE               | TIMESTAMP                                                        
+Time             | HIVE_DDL_RE       | TIMESTAMP                                                        
+Time             | DATABRICKS        | None                                                             
+Time             | OTHER             | TIME, VARCHAR                                                    
+Timestamp        | DATABRICKS        | TIMESTAMP                                                        
+Timestamp        | ORE               | TIMESTAMP                                                        
+Timestamp        | OTHER             | TIMESTAMP                                                        
+TIMESTMP         | ORE               | TIMESTAMP                                                        
+TM               | ORE               | TIMESTAMP                                                        
+TM               | HIVE_DDL_RE       | TIMESTAMP                                                        
+TM               | DATABRICKS        | None                                                             
+TM               | OTHER             | TIME, VARCHAR                                                    
+TS               | DATABRICKS        | TIMESTAMP                                                        
+TS               | ORE               | TIMESTAMP                                                        
+TS               | OTHER             | TIMESTAMP                                                        
+TXT              | DATABRICKS        | STRING, VARCHAR                                                  
+TXT              | ORE               | VARCHAR2                                                         
+TXT              | OTHER             | VARCHAR                                                          
+TY               | DATABRICKS        | STRING, VARCHAR                                                  
+TY               | ORE               | VARCHAR2                                                         
+TY               | OTHER             | VARCHAR                                                          
+TYP              | DATABRICKS        | STRING, VARCHAR                                                  
+TYP              | ORE               | VARCHAR2                                                         
+TYP              | OTHER             | VARCHAR                                                          
+Type             | ORE               | VARCHAR2                                                         
+Type             | OTHER             | VARCHAR                                                          
+TYPE             | DATABRICKS        | STRING, VARCHAR                                                  
+Year             | ORE               | NUMBER                                                           
+Year             | TERADATA_DDL      | INT, INTEGER, SMALLINT                                           
+Year             | OTHER             | INT, INTEGER                                                     
+Year Month       | ORE               | CHAR(6)                                                          
+Year Month       | DATABRICKS        | STRING, CHAR(6)                                                  
+Year Month       | OTHER             | CHAR(6)                                                          
+YR               | ORE               | NUMBER                                                           
+YR               | TERADATA_DDL      | INT, INTEGER, SMALLINT                                           
+YR               | OTHER             | INT, INTEGER                                                     
+YR_MTH           | ORE               | CHAR(6)                                                          
+YR_MTH           | DATABRICKS        | STRING, CHAR(6)                                                  
+YR_MTH           | OTHER             | CHAR(6)                                                          

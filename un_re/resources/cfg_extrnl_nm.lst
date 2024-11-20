@@ -1,0 +1,16 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_extrnl_nm.lst
+#
+# Current Cigna Standard External Name abbreviations and alternate abbreviations.  
+# Used by erwin for logical to physical name transformation.  
+# Abbreviations and alternates are assigned by the DMCoE.
+#
+# word         | abbr        
+# ------------ | ------------
+virgin pulse   | VIRGIN PULSE
+carepathway    | CAREPATHWAY 
+peoplesoft     | PEOPLESOFT  
+evernorth      | EVERNORTH   
+pathwell       | PATHWELL    
+saveon         | SAVEON      
+cigna          | CIGNA       
+omada          | OMADA       

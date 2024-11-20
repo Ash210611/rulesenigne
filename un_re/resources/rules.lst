@@ -1,0 +1,235 @@
+#
+# This file lists the rules that are available to be enforced by this rules 
+# engine.
+# This configuration data is stored in the G.AVAILABLE_RULES_TO_CHECK global
+# variable.   These rule IDs are available to ALL RULES_ENGINE_TYPEs.
+#
+# That doesn't mean they SHOULD be checked for a specific RULES_ENGINE_TYPE.
+# 
+# The rules that SHOULD be checked are listed in the 
+# rules.<RULE_ENGINE_TYPE>.lst file.
+# 
+# Any lines in this file containing a '#' will be considered comments.
+# Comment lines will be ignored.
+#
+# Columns are separated using a pipe delimiter.
+#
+# General rules apply to all input files.  It is not realistic to turn those
+# off, so those are always on, and are included here for documentation purposes.
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | rule_ty_txt    | short_desc
+# -----+--+---------+----------------+-----------------------------------------------------------------
+g001   | GENERAL        | Input files must be readable in the UTF-8 code set.
+g002   | GENERAL        | SQL statements must end with a semi-colon.
+g003   | GENERAL        | Each SQL statement must be a valid SQL statement.
+g004   | GENERAL        | A database context must exist.
+g005   | GENERAL        | The UN_RE must be able to classify what kind of command it is reading.
+g011   | GENERAL        | Use consistent capitalization.
+g012   | GENERAL        | Ruleset Indicators must be one of the valid values.
+# g013   | GENERAL        | The TechDebt ruleset indicator was used
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | rule_ty_txt    | short_desc
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r001   | COMMAND        | Cannot grant SYSDBA permission to anyone
+r002   | TABLE          | Every table must have a primary key
+r003   | COLUMN         | Every column name must have a valid classword
+r004   | COLUMN         | Every column must have a valid datatype for its classword
+r005   | COLUMN         | Objects are placed in an appropriate tablespace
+r006   | COMMAND        | Certain command types are not allowed
+r200   | COLUMN COMMENT | Datamodel column comment cannot be null, empty, spaces, or blank.
+r201   | COLUMN COMMENT | Physical column comment cannot be null, empty, spaces, or blank.
+r202   | COLUMN COMMENT | Datamodel column comment must be 256 characters or less.
+r203   | COLUMN COMMENT | Physical column comment must be 256 characters or less.
+r204   | COLUMN         | Datamodel column name should not contain bad characters.
+r205   | COLUMN         | Physical column name should not contain bad characters.
+r206   | COLUMN COMMENT | Datamodel column comment should not contain bad characters.
+r207   | COLUMN COMMENT | Physical column comment should not contain bad characters.
+r208   | COLUMN         | Datamodel column name should not contain underscores.
+r209   | COLUMN COMMENT | Datamodel column comment should differ from the datamodel or physical column name.
+r210   | COLUMN COMMENT | Physical column comment should differ from the datamodel or physical column name.
+r211   | COLUMN COMMENT | Datamodel column comment should match the physical column comments.
+r212   | COLUMN         | Datamodel column name should not use obsolete business terms.
+r213   | COLUMN         | Physical column name should not use obsolete business terms.
+r214   | COLUMN         | Datamodel column name should differ from the physical column name.
+r215   | COLUMN         | Datamodel column name should include an approved classword.
+r216   | COLUMN         | Physical column name should include an approved classword
+r217   | COLUMN         | Column classword exceptions must be on the approved list.
+r218   | COLUMN         | Datamodel column name must not contain articles.
+r219   | COLUMN         | Physical column name must not contain articles.
+r220   | COLUMN         | Datamodel column name array index should follow the classword.
+r221   | COLUMN         | Physical column name array index should follow the classword.
+r223   | COLUMN         | Physical column name should be derived from Datamodel name.
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | rule_ty_txt    | short_desc
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r224   | DATA LINEAGE   | Source column definition should not be blank, empty or spaces.
+r225   | DATA LINEAGE   | Target column definition should not be blank, empty or spaces.
+r226   | DATA LINEAGE   | Target data length should be consistent with the source.
+r227   | DATA LINEAGE   | Every column in a table must have a data lineage.
+r228   | DATA SOURCE    | Source column definition should not be blank, empty or spaces.
+r229   | DATA SOURCE    | Datamodel source table and columns have no bad characters.
+r230   | DATA SOURCE    | Definition should be a full sentence.
+r231   | DATA SOURCE    | Every datamodel has at least once source.
+r232   | DATA MODEL     | Datamodel definition should not be blank, empty or spaces.
+r233   | DATA MODEL     | Datamodel name should not contain bad characters.
+r234   | DATA MODEL     | Datamodel definition should be a full sentence.
+r235   | DATA MODEL     | Datamodel internal name must match file name.
+r236   | DATA MODEL     | Datamodel should have an NSM attached.
+r237   | SUBJECT AREA   | Subject area definition is not blank, empty or spaces.
+r238   | SUBJECT AREA   | Subject area table and column names have no bad characters.
+r239   | SUBJECT AREA   | Subject area definition is a full sentence.
+r240   | SUBJECT AREA   | Subject area definition is not blank, empty or spaces.
+r241   | TABLE COMMENT  | Physical table comment cannot be blank, empty or null.
+r242   | TABLE COMMENT  | Datamodel entity definition is 256 characters or less.
+r243   | TABLE COMMENT  | Physical table comment must be 256 characters or less.
+r244   | TABLE          | Datamodel entity name should not contain bad characters.
+r245   | TABLE          | Physical table name should not contain bad characters.
+r246   | TABLE COMMENT  | Datamodel entity comment should not contain bad characters.
+r247   | TABLE COMMENT  | Physical table comment should not contain bad characters.
+r248   | TABLE COMMENT  | Datamodel entity name should contain no underscores.
+r249   | TABLE COMMENT  | Datamodel entity comment should be a full sentence.
+r250   | TABLE COMMENT  | Physical table comment should differ from the table name
+r251   | TABLE COMMENT  | Datamodel entity comment should match the physical table comment.
+r253   | TABLE          | Table name should not contain obsolete business terms.
+r254   | TABLE          | Datamodel entity name should not match the physical table name.
+r255   | TABLE          | Every table is represented in a diagram.
+r256   | TABLE          | The table domain is listed.
+r257   | TABLE          | Datamodel entity name should not contain articles.
+r258   | TABLE          | Table name must not contain articles.
+r259   | TABLE          | Datamodel entity and column names should be unique.
+r260   | TABLE XREF     | Table names should be unique.
+r261   | TABLE          | Physical table name should be derived from Datamodel table name.
+r262   | RELATIONSHIP   | Table does not contain duplicate relationships.
+r298   | TABLE          | TMP tables should be renamed TEMP tables.
+r299   | COLUMN XREF    | Columns should use a consistent data type.
+r300   | TABLE          | Table name must be 128 characters or less.
+r301   | COLUMN         | Column name must be 128 characters or less.
+r303   | COLUMN         | Physical column name should be derived from Datamodel column Names.
+r306   | COLUMN         | CD Columns should use a VARCHAR(10) data type.
+r307   | TABLE          | CTAS table names must start with "TEMP_".
+r308   | TABLE STORAGE  | If Hive storage is specified, it must say PARQUET, or AVRO.
+r309   | TABLE          | Databricks Optimize ZORDER columns should not be dates.
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | rule_ty_txt    | short_desc
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r401   | TABLE          | Create Table commands must include all required content.
+r402   | TABLE          | Create Table command must exclude any unexpected content.
+r403   | TABLE          | Every TD table should have a primary index.
+r404   | DML            | Every TD table should have a primary Index. (Duplicate of 403?)
+#
+r405   | COLLECT STATS  | Only collect statistics on a table once.
+r406   | VIEW           | Views should say locking row for access.
+r407   | TABLE          | Certain Alter Table commands are not allowed.
+r408   | TABLE          | Backup table names must use the _BAK suffix.
+r411   | LOCATION       | Tables and views are in right database.
+r412   | DML            | Insert statements should not say Select-star.
+r413   | VIEW           | Views must have a database qualifier.
+r414   | COLUMN         | IDENTITY datatypes are not allowed.
+r415   | TABLE          | BASE tables should not be Multiset.
+r416   | FILE           | Control characters should not be used.
+r417   | COLUMN         | A comment is unique across the columns of a table.
+r418   | COLUMN         | Every table should have a PK named Table_Name_KEY.
+r419   | COLUMN         | Date/Timestamp columns come in pairs when marking intervals.
+#
+# SWC 9/22/2020: Rule r420 is not needed and is now deactivated for the time being, 
+# r420   | COLUMN       | All required audit columns are present.
+#
+r421   | FILE           | GRANT commands are not allowed.
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | rule_ty_txt    | short_desc
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# Physical Datatype Rules
+r422   | TABLE          | Check if this table is a valid reference table.
+r423   | INDEX          | A unique index should not include the term date or timestamp.
+#
+r424   | COLUMN         | Classword CNT    (Count)       should have data type Integer.
+r425   | COLUMN         | Classword AMT    (Amount)      should have data type Number.
+r426   | COLUMN         | Classword DT     (Date)        should have data type Date.
+r427   | COLUMN         | Classword DESC   (Description) should have data type Varchar(255).
+r428   | COLUMN         | Classword ID     (Identifier)  should have data type Number or Varchar().
+r429   | COLUMN         | Classword IND    (Indicator)   should have data type Char(1).
+r430   | COLUMN         | Classword KEY    (Key)         should have data type Char(32) or BigInt.
+r431   | COLUMN         | Classword LMT    (Limit)       should have data type Number.
+r432   | COLUMN         | Classword LN     (Line)        should have data type Varchar().
+r433   | COLUMN         | Classword NM     (Name)        should have data type Varchar(100) or Varchar(255).
+r434   | COLUMN         | Classword NUM    (Number)      should have data type Varchar() or Number.
+r435   | COLUMN         | Classword OBJ    (Object)      should have data type BLOB.
+r436   | COLUMN         | Classword PCT    (Percent      should have data type Number.
+r437   | COLUMN         | Classword PCTG   (Percentage)  should have data type Number.
+r438   | COLUMN         | Classword PCTL   (Percentile)  should have data type Number.
+r439   | COLUMN         | Classword QUALR  (Qualifier)   should have data type String.
+r440   | COLUMN         | Classword QTY    (Quantity)    should have data type Number.
+r441   | COLUMN         | Classword RNG    (Range)       should have data type Number.
+r442   | COLUMN         | Classword RT     (Rating)      should have data type Number.
+r443   | COLUMN         | Classword RTO    (Ratio)       should have data type Number.
+r444   | COLUMN         | Classword TXT    (Text)        should have data type Varchar().
+r456   | COLUMN         | Classword TY     (Type)        should have data type Varchar().
+r454   | COLUMN         | Classword TYP    (Type)        should have data type Varchar().
+r445   | COLUMN         | Classword TM     (Time)        should have data type Time.
+r446   | COLUMN         | Classword TS     (Timestamp)   should have data type Datetime or Timestamp.
+r447   | COLUMN         | Classword YR     (Year)        should have data type Number.
+r450   | COLUMN         | Classword YR_MTH (YearMonth)   should have data type Char(6).
+#
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r448   | COLUMN         | Materialized View name should end with _SV rather than _MV.
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# Redshift-specific rules
+r449   | TABLE          | Redshift table should always have a Distribution Key DISTKEY.
+r451   | TABLE          | Redshift if column PDS_CRET_TS is used, must also have PDS_UPDT_TS.
+r452   | TABLE          | Redshift if column PDS_CHNL_SRC_CD is used, must also have PDS_CRET_TS and PDS_UPDT_TS.
+r453   | TABLE          | Redshift table should always have these audit columns: CRET_TS, UDPT_TS and LOAD_CTL_KEY.
+# -----+--+---------+----------------+-----------------------------------------------------------------
+r455   | COLUMN         | A class word with no token to the left is invalid.
+r457   | TABLE          | Teradata tables should not be FALLBACK
+# -----+--+---------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | rule_ty_txt    | short_desc
+# -----+---+----+---------+----------------+-----------------------------------------------------------
+#
+# DML Rules
+r500   | DML            | Please do not use Cross Joins.
+r501   | DML            | IN Clauses should 20 or less items.
+r502   | DML            | In Left Joins, do not filter on a Right column.
+r503   | DML            | ETL tables should either be MULTISET, or SET with a UPI.
+# r504   | DML            | Use COALESCE instead of NVL.
+# 11/09/21 Disabling this rule due to lack of compelling value.
+#
+r505   | DML            | Limit SQL statements to 1000 lines or less.
+r506   | DML            | Table Aliases should be used consistently.
+#
+# r507   | DML            | Instead of projecting asterisk, use a named column list.
+# 09/28/21 I asked Srini if he wants to keep this rule.
+# 10/14/21 No response, so I will disable this rule now.
+#
+r508   | DML            | Update clauses should have a WHERE clause.
+r509   | DML            | Joining N tables needs at least N-1 join conditions.
+r510   | DML            | ETL tables should either be VOLATILE or created in an ERR database
+#
+# -----+------------------------------------------------------------------------------------------------
+# ESP Rules
+r701   | ESP            | ESP should invoke the proper APPLIB
+r702   | ESP            | ESP file must specify an APPLID. was r701
+r703   | ESP            | ESP APPL name character count == 8.
+r704   | ESP            | ESP APPL name prefix must use a valid BUC$ code.
+r705   | ESP            | ESP APPL name suffix must == 6 in Prod.
+r706   | ESP            | ESP contains both an APPLSTART and an APPLEND
+r707   | ESP            | ESP job contains a valid DOCMEM
+r708   | ESP            | ESP job name length <= 65
+r709   | ESP            | ESP job name contains a C1 or NC prefix
+r710   | ESP            | ESP job name contains a BUC$ association
+r711   | ESP            | ESP file must specify at least 1 agent name.
+r712   | ESP            | ESP job must specify a frequency
+r713   | ESP            | ESP job must specify a username
+r714   | ESP            | ESP job must specify a script or path if agent is *inix
+r715   | ESP            | ESP job ARGS must be consistent with the environment.
+r716   | ESP            | ESP resource dependency 1 holds for agent.
+r717   | ESP            | ESP resource dependency 2 holds for BUC$ code.
+r718   | ESP            | ESP job names must be unique, and only specified once

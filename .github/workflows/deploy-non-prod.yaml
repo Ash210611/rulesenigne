@@ -1,0 +1,29 @@
+name: Push Deploy Feature
+
+on:
+  push:
+    branches:
+      - main
+      - feature_*
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  DevApply:
+    uses: ./.github/workflows/deploy.yaml
+    with:
+      environment: dev
+      action: apply
+    secrets: inherit
+
+  TestApply:
+    uses: ./.github/workflows/deploy.yaml
+    if: ${{ github.ref_name == 'main' }}
+    needs:
+      - DevApply
+    with:
+      environment: test
+      action: apply
+    secrets: inherit

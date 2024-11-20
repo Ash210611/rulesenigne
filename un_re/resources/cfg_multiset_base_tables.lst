@@ -1,0 +1,104 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_multiset_base_tables.lst
+#
+# Most tables in a Base database should be SET tables.
+# A few tables in a BASE database are allowed to be MULTISET tables.
+# This table will list those few tables which are approved to vary from that rule.
+# 
+#
+# table_nm                        | comment_txt                             
+# ------------------------------- | ----------------------------------------
+ALIGN_CUST_ALGNMT_DTL             | 11/12/2019: for Steve LeVander          
+CED_CUST_INTGRD_DTL_MV_INCR       | 06/20/2023 for Arunraj Antony           
+CLBRTN_DAILY                      | 11/12/2019: for Steve LeVander          
+CLBRTN_ED_IP_AGG_A                | 11/12/2019: for Steve LeVander          
+CLBRTN_ED_IP_AGG_B                | 11/12/2019: for Steve LeVander          
+CLIENT_BEN_SVC_INTGRD_SV          |                                         
+CLM_LN_MED_INCRMTL_SV             | 02/04/2020: US1149106 for Manohara      
+CLM_LN_MED_MV                     |                                         
+CLM_LN_PHRM_MV                    | 12/13/2019: US1128723 for Jayasri Ganesh
+CUST_INTGRD_DTL_INCRMTL_SV        | 06/20/2023 for Arunraj Antony           
+CUST_INTGRD_DTL_PIT_MV            | 11/12/2019: for Steve LeVander          
+EBM_MBR_RULE_SCORE                | 5/19/22: for Vijay Krishnan             
+EBM_MBR_TOTL_SCORE                | 5/19/22: for Vijay Krishnan             
+GIC_API_CUST                      | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_ATSTN                | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_CURR_PCP             | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_GAPS                 | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_GAPS_SCORE           | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_LATEST_LETRS         | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_LETR_HIST            | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_PROV                 | 6/27/22: for Vijay Krishnan             
+GIC_API_CUST_TOTL_SCORE           | 6/27/22: for Vijay Krishnan             
+GIC_API_LATEST_CYC_RUN_DT         | 6/27/22: for Vijay Krishnan             
+GIC_LETR                          | 5/19/22: for Vijay Krishnan             
+GIC_LETR_ADDR                     | 5/19/22: for Vijay Krishnan             
+GIC_LETR_DRUG                     | 5/19/22: for Vijay Krishnan             
+GIC_LETR_FLLOUT                   | 5/19/22: for Vijay Krishnan             
+GIC_LETR_GAPS                     | 5/19/22: for Vijay Krishnan             
+GIC_LETR_GAPS_CCVPF               | 05/18/2020: For Vijay Krishnan          
+GIC_LETR_HIST                     | 5/19/22: for Vijay Krishnan             
+GIC_LETR_NON_LETR_GAPS            | 5/19/22: for Vijay Krishnan             
+GIC_LETR_NON_LETR_GAPS_CCVPF      | 05/18/2020: For Vijay Krishnan          
+INDIV_DEMOGRPHC_A                 | 11/12/2019: for Steve LeVander          
+INDIV_DEMOGRPHC_B                 | 11/12/2019: for Steve LeVander          
+MBR_MTH_COMPRS_INCRMTL_SV         | for Arunraj Antony                      
+MBR_MTH_DTL_INCRMTL_SV            | for Arunraj Antony                      
+MEMBR_MTH_HIST                    | 11/12/2019: for Steve LeVander          
+PROV_ALL_DEMGRPHC_ADDR_MV         |                                         
+PROV_ALL_DEMGRPHC_COMB_MV         |                                         
+PROV_ALL_DEMGRPHC_SPECLTY_MV      |                                         
+PROV_GRP_PERIOD_PARAMS_A          | 11/12/2019: for Steve LeVander          
+PROV_GRP_PERIOD_PARAMS_B          | 11/12/2019: for Steve LeVander          
+PROV_PRIM_DEMGRPHC_MV             |                                         
+QANI_CLBRTN_ALIGNMENT_GRP         | 11/12/2019: for Steve LeVander          
+QANI_CLM_LN_MED_MV                |                                         
+REQ_CLBRTN_AI                     | For PraveenKumar Sethuraman             
+REQ_CLBRTN_AI_BASE_AGG            | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ALIGNMENT_GRP          | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ALIGNMENT_GRP_HIST     | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_ALIGNMENT_MRKT_ALL     | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ALIGNMENT_MRKT_HIST    | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_ALIGNSUMM_BASE_AGG     | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ATC                    | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ATC_BASE_AGG           | For PraveenKumar Sethuraman             
+REQ_CLBRTN_EBM                    | For PraveenKumar Sethuraman             
+REQ_CLBRTN_EBM_BASE_AGG           | For PraveenKumar Sethuraman             
+REQ_CLBRTN_EBM_PROV_BASE_AGG      | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ED                     | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ED_BASE_AGG            | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ETG_BASE_AGG           | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ETG_HIST               | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_IP                     | For PraveenKumar Sethuraman             
+REQ_CLBRTN_IP_BASE_AGG            | For PraveenKumar Sethuraman             
+REQ_CLBRTN_MED_CLM_HIST           | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_MTHLY_ALGNMT_HIST      | 11/12/2019: for Steve LeVander          
+REQ_CLBRTN_MTHLY_ALGNMT_SH        | 11/12/2019: for Steve LeVander          
+REQ_CLBRTN_OON                    | For PraveenKumar Sethuraman             
+REQ_CLBRTN_OON_BASE_AGG           | For PraveenKumar Sethuraman             
+REQ_CLBRTN_OON_PROV_BASE_AGG      | For PraveenKumar Sethuraman             
+REQ_CLBRTN_OPIOID                 | For PraveenKumar Sethuraman             
+REQ_CLBRTN_OPIOID_BASE_AGG        | For PraveenKumar Sethuraman             
+REQ_CLBRTN_OPIOID_HIST            | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_PAYMT_CUST_DTL_HIST    | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_PERF_BASE_AGG          | For PraveenKumar Sethuraman             
+REQ_CLBRTN_PERF_DRVR              | For PraveenKumar Sethuraman             
+REQ_CLBRTN_PERF_DRVR_HIST         | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_PHRM_CLM_HIST          | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_PROV_RC_BASE_AGG       | For PraveenKumar Sethuraman             
+REQ_CLBRTN_PROV_ROSTER            | For PraveenKumar Sethuraman             
+REQ_CLBRTN_PROV_ROSTER_HIST       | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_SC                     | For PraveenKumar Sethuraman             
+REQ_CLBRTN_SC_BASE_AGG            | For PraveenKumar Sethuraman             
+REQ_CLBRTN_SC_HIST                | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_SPCLT_PHRM             | For PraveenKumar Sethuraman             
+REQ_CLBRTN_SPCLT_PHRM_BASE_AGG    | For PraveenKumar Sethuraman             
+REQ_CLBRTN_SPCLT_PHRM_HIST        | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_SPCLT_REFRL            | For PraveenKumar Sethuraman             
+REQ_CLBRTN_SPCLT_REFRL_BASE_AGG   | For PraveenKumar Sethuraman             
+REQ_CLBRTN_SPCLT_REFRL_HIST       | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_TMC                    | For PraveenKumar Sethuraman             
+REQ_CLBRTN_TMC_BASE_AGG           | For PraveenKumar Sethuraman             
+REQ_CLBRTN_TMC_HIST               | 08/22/2023 for Ganesan Thirupathi       
+REQ_CLBRTN_TREND_BASE_AGG         | For PraveenKumar Sethuraman             
+REQ_CLBRTN_ZIP                    | For PraveenKumar Sethuraman             
+RPT_XLS_PHI                       | 11/12/2019: for Steve LeVander          

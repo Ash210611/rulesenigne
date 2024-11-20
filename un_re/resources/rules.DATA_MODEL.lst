@@ -1,0 +1,124 @@
+#
+# This file lists the rules for the DATA_MODEL rules engine
+#
+# Any lines in this file containing a '#' will be considered comments.
+# Comment lines will be ignored.
+#
+# Columns are separated using a pipe delimiter.
+#
+# General rules apply to all input files.  It is not realistic to turn those
+# off, so those are always on, and are included here for documentation purposes.
+#
+# -----+---+------------------+----------------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type: DATA_MODEL
+# -----+---+------------------+----------------+-----------------------------------------------------------------
+# id   | Severity   | short_desc
+# -----+---+------------------+----------------+-----------------------------------------------------------------
+# g001 | ERROR      | Input files must be readable in the UTF-8 code set.
+#
+# -----+---+------------------+----------------+-----------------------------------------------------------------
+# id   | Severity   | short_desc
+# -----+---+------------------+----------------+-----------------------------------------------------------------
+r200   | WARNING    | Datamodel column comment cannot be null, empty, spaces, or blank.
+r201   | ERROR      | Physical column comment cannot be null, empty, spaces, or blank.
+r202   | WARNING    | Datamodel column comment must be 256 characters or less.
+r203   | ERROR      | Physical column comment must be 256 characters or less.
+r204   | WARNING    | Datamodel column name should not contain bad characters.
+# r205   | ERROR      | Physical column name should not contain bad characters.
+r206   | WARNING    | Datamodel column comment should not contain bad characters.
+# r207   | ERROR      | Physical column comment should not contain bad characters.
+r208   | WARNING    | Datamodel column name should not contain underscores.
+r209   | WARNING    | Datamodel column comment should differ from the datamodel or physical column name.
+r210   | ERROR      | Physical column comment should differ from the datamodel or physical column name.
+r211   | ERROR      | Datamodel column comment should match the physical column comments.
+# r212   | WARNING    | Datamodel column name should not use obsolete business terms.
+# r213   | WARNING    | Physical column name should not use obsolete business terms.
+r214   | ERROR      | Datamodel column name should differ from the physical column name.
+# r215   | ERROR      | Datamodel column name should include an approved classword.
+# r216   | ERROR      | Physical column name should include an approved classword
+# r217   | ERROR      | Column classword exceptions must be on the approved list.
+r218   | WARNING    | Datamodel column name must not contain articles.
+# r219   | WARNING    | Physical column name must not contain articles.
+# r220   | ERROR      | Datamodel column name array index should follow the classword.
+# r221   | ERROR      | Physical column name array index should follow the classword.
+# r223   | ERROR      | Physical column name should be derived from Datamodel name.
+# -----+------------+-----------------------------------------------------------
+# id   | Severity   | short_desc
+# -----+------------+-----------------------------------------------------------
+# r224   | WARNING    | Source column definition should not be blank, empty or spaces.
+# r225   | WARNING    | Target column definition should not be blank, empty or spaces.
+# r226   | WARNING    | Target data length should be consistent with the source.
+# r227   | ERROR      | Every column in a table must have a data lineage.
+# r228   | WARNING    | Source column definition should not be blank, empty or spaces.
+# r229   | WARNING    | Datamodel source table and columns have no bad characters.
+# r230   | WARNING    | Definition should be a full sentence.
+# r231   | WARNING    | Every datamodel has at least once source.
+r232   | WARNING    | Datamodel definition should not be blank, empty or spaces.
+r233   | WARNING    | Datamodel name should not contain bad characters.
+r234   | WARNING    | Datamodel definition should be a full sentence.
+r235   | WARNING    | Datamodel name should be valid, and not just the Model number.
+r236   | WARNING    | Datamodel should have an NSM attached.
+r237   | WARNING    | Subject area definition is not blank, empty or spaces.
+# r238   | WARNING    | Subject area table and column names have no bad characters.
+r239   | WARNING    | Subject area definition is a full sentence.
+r240   | WARNING    | Subject area definition is not blank, empty or spaces.
+r241   | WARNING    | Physical table comment cannot be blank, empty or null.
+r242   | WARNING    | Datamodel table definition is 256 characters or less.
+# r243   | ERROR      | Physical table comment must be 256 characters or less.
+r244   | WARNING    | Datamodel table name should not contain bad characters.
+# r245   | ERROR      | Physical table name should not contain bad characters.
+r246   | WARNING    | Datamodel table comment should not contain bad characters.
+r247   | WARNING    | Physical table comment should not contain bad characters.
+r248   | WARNING    | Datamodel name should contain no underscores.
+r249   | WARNING    | Datamodel table comment should be a full sentence.
+r250   | WARNING    | Physical table comment should differ from the table name
+r251   | WARNING    | Datamodel table comment should match the physical table comment.
+# r251   | WARNING    | Datamodel table comment should match the physical table comment.
+# r253   | TBD        | Table name should not contain obsolete business terms.
+r254   | WARNING    | Datamodel table name should not match the physical table name.
+# r255   | WARNING    | Every table is represented in a physical diagram.
+r256   | WARNING    | The table domain is listed.
+r257   | WARNING    | Datamodel table name should not contain articles.
+r258   | WARNING    | Table name must not contain articles.
+r259   | WARNING    | Datamodel table and column names should be unique.
+r260   | WARNING    | Table names should be unique.
+r261   | WARNING    | Physical table name should be derived from Datamodel table name.
+# r262   | ERROR      | Table does not contain duplicate relationships.
+# r298   | TBD        | TMP tables should be renamed TEMP tables.
+# r299   | TBD        | Columns should use a consistent data type.
+# r300   | TBD        | Table name must be 128 characters or less.
+# r301   | TBD        | Column name must be 128 characters or less.
+# r303   | TBD        | Physical column name should be derived from Datamodel column Names.
+# r306   | WARNING    | CD Columns should use a VARCHAR(10) data type.
+# r307   | TBD        | CTAS table names must start with "TEMP_".
+# -----+------------+-----------------------------------------------------------
+# r424   | WARNING    | Classword CNT    (Count)       should have data type Integer.
+# r425   | WARNING    | Classword AMT    (Amount)      should have data type Number.
+# r426   | WARNING    | Classword DT     (Date)        should have data type Date.
+# r427   | WARNING    | Classword DESC   (Description) should have data type Varchar(255).
+# r428   | WARNING    | Classword ID     (Identifier)  should have data type Number or Varchar().
+# r429   | WARNING    | Classword IND    (Indicator)   should have data type Char(1).
+# r430   | WARNING    | Classword KEY    (Key)         should have data type Char(32) or BigInt.
+# r431   | WARNING    | Classword LMT    (Limit)       should have data type Number.
+# r432   | WARNING    | Classword LN     (Line)        should have data type Varchar().
+# r433   | WARNING    | Classword NM     (Name)        should have data type Varchar(100) or Varchar(255).
+# r434   | WARNING    | Classword NUM    (Number)      should have data type Varchar() or Number.
+# r435   | WARNING    | Classword OBJ    (Object)      should have data type BLOB.
+# r436   | WARNING    | Classword PCT    (Percent      should have data type Number.
+# r437   | WARNING    | Classword PCTG   (Percentage)  should have data type Number.
+# r438   | WARNING    | Classword PCTL   (Percentile)  should have data type Number.
+# r439   | WARNING    | Classword QUALR  (Qualifier)   should have data type String.
+# r440   | WARNING    | Classword QTY    (Quantity)    should have data type Number.
+# r441   | WARNING    | Classword RNG    (Range)       should have data type Number.
+# r442   | WARNING    | Classword RT     (Rating)      should have data type Number.
+# r443   | WARNING    | Classword RTO    (Ratio)       should have data type Number.
+# r444   | WARNING    | Classword TXT    (Text)        should have data type Varchar().
+# r456   | WARNING    | Classword TY     (Type)        should have data type Varchar().
+# r454   | WARNING    | Classword TYP    (Type)        should have data type Varchar().
+# r445   | WARNING    | Classword TM     (Time)        should have data type Time.
+# r446   | WARNING    | Classword TS     (Timestamp)   should have data type Datetime or Timestamp.
+# r447   | WARNING    | Classword YR     (Year)        should have data type Number.
+# r450   | WARNING    | Classword YR_MTH (YearMonth)   should have data type Char(6).
+# -----+------------+-----------------------------------------------------------
+# r455   | TBD        | A class word with no token to the left is invalid.
+# -----+------------+-----------------------------------------------------------

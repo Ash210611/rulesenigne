@@ -1,0 +1,5 @@
+[artifactory-docker-centos-7]
+name = artifactory-docker-centos-7
+baseurl = https://repo.sys.cigna.com/artifactory/docker-centos-7-x86_64-stable-yum
+enabled = 1
+gpgcheck = 0

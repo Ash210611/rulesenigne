@@ -1,0 +1,139 @@
+# Filename: /home/SILVER/c44774a/da_unified_rules_engine/un_re/resources/cfg_known_db.lst
+#
+# This is the list of known databases.
+# 	
+# We have different rules and generate different code for different databases.
+# Those differences are configured using this table.
+#
+# database_base            | view_database_base       | change_database_from                  | change_database_to                      | isa_base_db | isa_one_to_one_db | create_svc_view
+# ------------------------ | ------------------------ | ------------------------------------- | --------------------------------------- | ----------- | ----------------- | ---------------
+CCW_NOINTNOPHI_GLBL_VIEW   | CCW_NOINTNOPHI_GLBL_VIEW | CCW_NOINTNOPHI_GLBL_VIEW[2-3]*_[A-Z]* | CCW_NOINTNOPHI_GLBL_VIEW${env.id.upper} | False       | False             | False          
+CCW_INTNOPHI_GLBL_VIEW     | CCW_INTNOPHI_GLBL_VIEW   | CCW_INTNOPHI_GLBL_VIEW[2-3]*_[A-Z]*   | CCW_INTNOPHI_GLBL_VIEW${env.id.upper}   | False       | False             | False          
+CCW_INTPHIBH_GLBL_VIEW     | CCW_INTPHIBH_GLBL_VIEW   | CCW_INTPHIBH_GLBL_VIEW[2-3]*_[A-Z]*   | CCW_INTPHIBH_GLBL_VIEW${env.id.upper}   | False       | False             | False          
+CCW_NOINTPHI_GLBL_VIEW     | CCW_NOINTPHI_GLBL_VIEW   | CCW_NOINTPHI_GLBL_VIEW[2-3]*_[A-Z]*   | CCW_NOINTPHI_GLBL_VIEW${env.id.upper}   | False       | False             | False          
+AWS_CCW_EXTRACT_VIEW       | AWS_CCW_EXTRACT_VIEW     | AWS_CCW_EXTRACT_VIEW                  | AWS_CCW_EXTRACT_VIEW                    | False       | False             | False          
+CCW_INTPHI_GLBL_VIEW       | CCW_INTPHI_GLBL_VIEW     | CCW_INTPHI_GLBL_VIEW[2-3]*_[A-Z]*     | CCW_INTPHI_GLBL_VIEW${env.id.upper}     | False       | False             | False          
+CCW_NOINTNOPHI_VIEW        | CCW_NOINTNOPHI_VIEW      | CCW_NOINTNOPHI_VIEW[2-3]*_[A-Z]*      | CCW_NOINTNOPHI_VIEW${env.id.upper}      | False       | False             | False          
+CCW_RPT_HEV_ETLVIEW        | CCW_RPT_HEV_ETLVIEW      | CCW_RPT_HEV_ETLVIEW[2-3]*_[A-Z]*      | CCW_RPT_HEV_ETLVIEW${env.id.upper}      | True        | True              | False          
+CCW_RPT_CA_ETLVIEW         | CCW_RPT_CA_ETLVIEW       | CCW_RPT_CA_ETLVIEW[2-3]*_[A-Z]*       | CCW_RPT_CA_ETLVIEW${env.id.upper}       | False       | False             | False          
+CCW_INTNOPHI_VIEW          | CCW_INTNOPHI_VIEW        | CCW_INTNOPHI_VIEW[2-3]*_[A-Z]*        | CCW_INTNOPHI_VIEW${env.id.upper}        | False       | False             | False          
+CCW_INTPHIBH_VIEW          | CCW_INTPHIBH_VIEW        | CCW_INTPHIBH_VIEW[2-3]*_[A-Z]*        | CCW_INTPHIBH_VIEW${env.id.upper}        | False       | False             | False          
+CCW_NOINTPHI_VIEW          | CCW_NOINTPHI_VIEW        | CCW_NOINTPHI_VIEW[2-3]*_[A-Z]*        | CCW_NOINTPHI_VIEW${env.id.upper}        | False       | False             | False          
+CCW_RPT_HEV_BASE           | CCW_RPT_HEV_VIEW         | CCW_RPT_HEV_BASE[2-3]*_[A-Z]*         | CCW_RPT_HEV_BASE${env.id.upper}         | True        | True              | False          
+CCW_RPT_HEV_VIEW           | CCW_RPT_HEV_VIEW         | CCW_RPT_HEV_VIEW[2-3]*_[A-Z]*         | CCW_RPT_HEV_VIEW${env.id.upper}         | True        | True              | False          
+CCW_SHDW_ETLVIEW           | CCW_SHDW_ETLVIEW         | CCW_SHDW_ETLVIEW[2]*_[A-Z]*           | CCW_SHDW_ETLVIEW${env.id.upper}         | False       | False             | False          
+DM_RPT_USER_VIEW           | DM_RPT_USER_VIEW         | DM_RPT_USER_VIEW[2]*_[A-Z]*           | DM_RPT_USER_VIEW${env.id.upper}         | False       | False             | False          
+HADOOP_REPORTING           | HADOOP_REPORTING         | HADOOP_REPORTING                      | HADOOP_REPORTING                        | False       | False             | False          
+AWS_CCW_EXTRACT            | AWS_CCW_EXTRACT_VIEW     | AWS_CCW_EXTRACT                       | AWS_CCW_EXTRACT                         | True        | True              | False          
+CCW_CCD_ETLVIEW            | CCW_CCD_ETLVIEW          | CCW_CCD_ETLVIEW[2-3]*_[A-Z]*          | CCW_CCD_ETLVIEW${env.id.upper}          | False       | False             | False          
+CCW_INTPHI_VIEW            | CCW_INTPHI_VIEW          | CCW_INTPHI_VIEW[2-3]*_[A-Z]*          | CCW_INTPHI_VIEW${env.id.upper}          | False       | False             | False          
+#
+# database_base            | view_database_base       | change_database_from                  | change_database_to                      | isa_base_db | isa_one_to_one_db | create_svc_view
+# ------------------------ | ------------------------ | ------------------------------------- | --------------------------------------- | ----------- | ----------------- | ---------------
+CCW_RPT_CA_BASE            | CCW_RPT_CA_VIEW          | CCW_RPT_CA_BASE[2-3]*_[A-Z]*          | CCW_RPT_CA_BASE${env.id.upper}          | True        | True              | False          
+CCW_RPT_CA_VIEW            | CCW_RPT_CA_VIEW          | CCW_RPT_CA_STG[2-3]*_[A-Z]*           | CCW_RPT_CA_STG${env.id.upper}           | False       | False             | False          
+CCW_RPT_HEV_STG            | CCW_RPT_HEV_ETLVIEW      | CCW_RPT_HEV_STG[2-3]*_[A-Z]*          | CCW_RPT_HEV_STG${env.id.upper}          | False       | True              | False          
+CCW_RPT_STGVIEW            | CCW_RPT_STGVIEW          | CCW_RPT_STGVIEW[2-3]*_[A-Z]*          | CCW_RPT_STGVIEW${env.id.upper}          | False       | False             | False          
+CCW_RPTVIEW_V2V            | CCW_RPTVIEW_V2V          | CCW_RPTVIEW_V2V[2-3]*_[A-Z]*          | CCW_RPTVIEW_V2V${env.id.upper}          | False       | False             | False          
+CCWR_EOCEXTABVW            | CCWR_EOCEXTABVW          | CCWR_EOCEXTABVW[2-3]*_[A-Z]*          | CCWR_EOCEXTABVW${env.id.upper}          | False       | False             | False          
+CCWR_EOCEXWEBVW            | CCWR_EOCEXWEBVW          | CCWR_EOCEXWEBVW[2-3]*_[A-Z]*          | CCWR_EOCEXWEBVW${env.id.upper}          | False       | False             | False          
+CCWR_SCCEXTABVW            | CCWR_SCCEXTABVW          | CCWR_SCCEXTABVW[2-3]*_[A-Z]*          | CCWR_SCCEXTABVW${env.id.upper}          | False       | False             | False          
+CCWR_SCCEXWEBVW            | CCWR_SCCEXWEBVW          | CCWR_SCCEXWEBVW[2-3]*_[A-Z]*          | CCWR_SCCEXWEBVW${env.id.upper}          | False       | False             | False          
+DM_RPT_SVC_VIEW            | DM_RPT_SVC_VIEW          | DM_RPT_SVC_VIEW[2]*_[A-Z]*            | DM_RPT_SVC_VIEW${env.id.upper}          | False       | False             | False          
+CCW_RPT_HEV_SP             | CCW_RPT_HEV_ETLVIEW      | CCW_RPT_HEV_SP[2-3]*_[A-Z]*           | CCW_RPT_HEV_SP${env.id.upper}           | False       | False             | False          
+CCW_RPT_V2V_SP             | CCW_RPT_V2V_SP           | CCW_RPT_V2V_SP[2-3]*_[A-Z]*           | CCW_RPT_V2V_SP${env.id.upper}           | False       | False             | False          
+CCW_RPTVIEW_RX             | CCW_RPTVIEW_RX           | CCW_RPTVIEW_RX[2-3]*_[A-Z]*           | CCW_RPTVIEW_RX${env.id.upper}           | False       | False             | False          
+CCW_SMNTC_VIEW             | CCW_VIEW                 | CCW_SMNTC_VIEW[2-3]*_[A-Z]*           | CCW_SMNTC_VIEW${env.id.upper}           | False       | True              | True           
+IMMETRICS_BASE             | IMMETRICS_VIEW           | IMMETRICS_BASE[2-3]*_[A-Z]*           | IMMETRICS_BASE${env.id.upper}           | True        | True              | False          
+IMMETRICS_VIEW             | IMMETRICS_VIEW           | IMMETRICS_VIEW[2-3]*_[A-Z]*           | IMMETRICS_VIEW${env.id.upper}           | False       | False             | False          
+CCW_SHDW_BASE              | CCW_SHDW_VIEW            | CCW_SHDW_BASE[2]*_[A-Z]*              | CCW_SHDW_BASE${env.id.upper}            | True        | True              | False          
+CCW_SHDW_EVAL              | CCW_SHDW_VIEW            | CCW_SHDW_EVAL[2]*_[A-Z]*              | CCW_SHDW_EVAL${env.id.upper}            | True        | True              | False          
+CCW_SHDW_VIEW              | CCW_SHDW_VIEW            | CCW_SHDW_VIEW[2]*_[A-Z]*              | CCW_SHDW_VIEW${env.id.upper}            | False       | False             | False          
+CCW_USER_VIEW              | CCW_USER_VIEW            | CCW_USER_VIEW[2-3]*_[A-Z]*            | CCW_USER_VIEW${env.id.upper}            | False       | False             | False          
+#
+# database_base            | view_database_base       | change_database_from                  | change_database_to                      | isa_base_db | isa_one_to_one_db | create_svc_view
+# ------------------------ | ------------------------ | ------------------------------------- | --------------------------------------- | ----------- | ----------------- | ---------------
+DEVOPSSANDBOX              | DEVOPSSANDBOX            | DEVOPSSANDBOX                         | DEVOPSSANDBOX                           | False       | False             | False          
+IMMETRICS_STG              | IMMETRICS_VIEW           | IMMETRICS_STG[2-3]*_[A-Z]*            | IMMETRICS_STG${env.id.upper}            | False       | False             | False          
+CCW_ALL_VIEW               | CCW_ALL_VIEW             | CCW_ALL_VIEW[2-3]*_[A-Z]*             | CCW_ALL_VIEW${env.id.upper}             | False       | False             | False          
+CCW_AUD_VIEW               | CCW_AUD_VIEW             | CCW_AUD_VIEW[2-3]*_[A-Z]*             | CCW_AUD_VIEW${env.id.upper}             | False       | False             | False          
+CCW_CCD_VIEW               | CCW_CCD_VIEW             | CCW_CCD_VIEW[2-3]*_[A-Z]*             | CCW_CCD_VIEW${env.id.upper}             | False       | False             | False          
+CCW_HRD_VIEW               | CCW_HRD_VIEW             | CCW_HRD_VIEW[2-3]*_[A-Z]*             | CCW_HRD_VIEW${env.id.upper}             | False       | False             | False          
+CCW_PUB_VIEW               | CCW_PUB_VIEW             | CCW_PUB_VIEW[2-3]*_[A-Z]*             | CCW_PUB_VIEW${env.id.upper}             | False       | False             | False          
+CCW_RPT2VIEW               | CCW_RPT2VIEW             | CCW_RPT2VIEW[2-3]*_[A-Z]*             | CCW_RPT2VIEW${env.id.upper}             | False       | False             | False          
+CCW_RPT3VIEW               | CCW_RPT3VIEW             | CCW_RPT3VIEW[2-3]*_[A-Z]*             | CCW_RPT3VIEW${env.id.upper}             | False       | False             | False          
+CCW_SHDW_AUD               | CCW_SHDW_VIEW            | CCW_SHDW_AUD[2]*_[A-Z]*               | CCW_SHDW_AUD${env.id.upper}             | False       | False             | False          
+CCW_SHDW_ERR               | CCW_SHDW_VIEW            | CCW_SHDW_ERR[2]*_[A-Z]*               | CCW_SHDW_ERR${env.id.upper}             | False       | False             | False          
+CCW_SHDW_REF               | CCW_SHDW_VIEW            | CCW_SHDW_REF[2]*_[A-Z]*               | CCW_SHDW_REF${env.id.upper}             | False       | False             | False          
+CCW_SHDW_STG               | CCW_SHDW_VIEW            | CCW_SHDW_STG[2]*_[A-Z]*               | CCW_SHDW_STG${env.id.upper}             | False       | False             | False          
+CCW_STG_VIEW               | CCW_STG_VIEW             | CCW_STG_VIEW[2-3]*_[A-Z]*             | CCW_STG_VIEW${env.id.upper}             | False       | False             | False          
+CCW_SVC_VIEW               | CCW_SVC_VIEW             | CCW_SVC_VIEW[2-3]*_[A-Z]*             | CCW_SVC_VIEW${env.id.upper}             | False       | False             | False          
+CCWR_EXTABVW               | CCWR_EXTABVW             | CCWR_EXTABVW[2-3]*_[A-Z]*             | CCWR_EXTABVW${env.id.upper}             | False       | False             | False          
+CCWR_EXWEBVW               | CCWR_EXWEBVW             | CCWR_EXWEBVW[2-3]*_[A-Z]*             | CCWR_EXWEBVW${env.id.upper}             | False       | False             | False          
+CRPT_ETLVIEW               | CRPT_ETLVIEW             | CRPT_ETLVIEW[2-3]*_[A-Z]*             | CRPT_ETLVIEW${env.id.upper}             | False       | False             | False          
+CSR_STG_VIEW               | CSR_STG_VIEW             | CSR_STG_VIEW[2-3]*_[A-Z]*             | CSR_STG_VIEW${env.id.upper}             | False       | False             | False          
+DM_SHDW_VIEW               | DM_SHDW_VIEW             | DM_SHDW_VIEW[2]*_[A-Z]*               | DM_SHDW_VIEW${env.id.upper}             | False       | False             | False          
+#
+# database_base            | view_database_base       | change_database_from                  | change_database_to                      | isa_base_db | isa_one_to_one_db | create_svc_view
+# ------------------------ | ------------------------ | ------------------------------------- | --------------------------------------- | ----------- | ----------------- | ---------------
+CCW_CCMI_VW                | CCW_CCMI_VW              | CCW_CCMI_VW[2-3]*_[A-Z]*              | CCW_CCMI_VW${env.id.upper}              | False       | False             | False          
+CCW_DQ_VIEW                | CCW_DQ_VIEW              | CCW_DQ_VIEW[2-3]*_[A-Z]*              | CCW_DQ_VIEW${env.id.upper}              | False       | False             | False          
+CCW_LZ_VIEW                | CCW_LZ_VIEW              | CCW_LZ_VIEW[2-3]*_[A-Z]*              | CCW_LZ_VIEW${env.id.upper}              | False       | False             | False          
+CCW_RPT_AUD                | CCW_RPTVIEW              | CCW_RPT_AUD[2-3]*_[A-Z]*              | CCW_RPT_AUD${env.id.upper}              | True        | True              | False          
+CCW_RPT_ERR                | CCW_RPTVIEW              | CCW_RPT_ERR[2-3]*_[A-Z]*              | CCW_RPT_ERR${env.id.upper}              | True        | True              | False          
+CCW_RPT_STG                | CCW_RPT_STGVIEW          | CCW_RPT_STG[2-3]*_[A-Z]*              | CCW_RPT_STG${env.id.upper}              | True        | False             | False          
+CCW_RPT_V2V                | CCW_RPTVIEW_V2V          | CCW_RPT_V2V[2-3]*_[A-Z]*              | CCW_RPT_V2V${env.id.upper}              | True        | True              | False          
+CCW_RPTVIEW                | CCW_RPTVIEW              | CCW_RPTVIEW[2-3]*_[A-Z]*              | CCW_RPTVIEW${env.id.upper}              | False       | False             | False          
+CCW_SHDW_DQ                | CCW_SHDW_VIEW            | CCW_SHDW_DQ[2]*_[A-Z]*                | CCW_SHDW_DQ${env.id.upper}              | False       | False             | False          
+CCW_SHDW_LZ                | CCW_SHDW_VIEW            | CCW_SHDW_LZ[2]*_[A-Z]*                | CCW_SHDW_LZ${env.id.upper}              | False       | False             | False          
+CCW_SHDW_SP                | CCW_SHDW_VIEW            | CCW_SHDW_SP[2]*_[A-Z]*                | CCW_SHDW_SP${env.id.upper}              | False       | False             | False          
+CCW_VW_PHRM                | CCW_VW_PHRM              | CCW_VW_PHRM[2-3]*_[A-Z]*              | CCW_VW_PHRM${env.id.upper}              | False       | False             | False          
+CRMMKT_VIEW                | CRMMKT_VIEW              | CRMMKT_VIEW[2-3]*_[A-Z]*              | CRMMKT_VIEW${env.id.upper}              | False       | False             | False          
+CSR_LZ_VIEW                | CSR_LZ_VIEW              | CSR_LZ_VIEW[2-3]*_[A-Z]*              | CSR_LZ_VIEW${env.id.upper}              | False       | False             | False          
+DM_RPT_BASE                | DM_RPT_BASE              | DM_RPT_BASE[2]*_[A-Z]*                | DM_RPT_BASE${env.id.upper}              | True        | False             | False          
+DM_SHDW_AUD                | DM_SHDW_VIEW             | DM_SHDW_AUD[2]*_[A-Z]*                | DM_SHDW_AUD${env.id.upper}              | False       | False             | False          
+DM_SHDW_ERR                | DM_SHDW_VIEW             | DM_SHDW_ERR[2]*_[A-Z]*                | DM_SHDW_ERR${env.id.upper}              | False       | False             | False          
+DM_SHDW_STG                | DM_SHDW_VIEW             | DM_SHDW_STG[2]*_[A-Z]*                | DM_SHDW_STG${env.id.upper}              | False       | False             | False          
+MBM_ETLVIEW                | MBM_ETLVIEW              | MBM_ETLVIEW[2-3]*_[A-Z]*              | MBM_ETLVIEW${env.id.upper}              | False       | False             | False          
+CCW_RPT_RX                 | CCW_RPTVIEW_RX           | CCW_RPT_RX[2-3]*_[A-Z]*               | CCW_RPT_RX${env.id.upper}               | True        | True              | False          
+#
+# database_base            | view_database_base       | change_database_from                  | change_database_to                      | isa_base_db | isa_one_to_one_db | create_svc_view
+# ------------------------ | ------------------------ | ------------------------------------- | --------------------------------------- | ----------- | ----------------- | ---------------
+DM_SHDW_LZ                 | DM_SHDW_VIEW             | DM_SHDW_LZ[2]*_[A-Z]*                 | DM_SHDW_LZ${env.id.upper}               | False       | False             | False          
+UMCM_BASE                  | CCW_VIEW                 | UMCM_BASE[2-3]*_[A-Z]*                | UMCM_BASE${env.id.upper}                | True        | True              | False          
+UMCM_VIEW                  | UMCM_VIEW                | UMCM_VIEW[2-3]*_[A-Z]*                | UMCM_VIEW${env.id.upper}                | False       | False             | False          
+CCW_BASE                   | CCW_VIEW                 | CCW_BASE[2-3]*_[A-Z]*                 | CCW_BASE${env.id.upper}                 | True        | True              | True           
+CCW_EVAL                   | CCW_VIEW                 | CCW_EVAL[2-3]*_[A-Z]*                 | CCW_EVAL${env.id.upper}                 | True        | True              | True           
+CCW_VIEW                   | CCW_VIEW                 | CCW_VIEW[2-3]*_[A-Z]*                 | CCW_VIEW${env.id.upper}                 | False       | False             | False          
+CIM_VIEW                   | CIM_VIEW                 | CIM_VIEW[2-3]*_[A-Z]*                 | CIM_VIEW${env.id.upper}                 | False       | False             | False          
+CSR_BASE                   | CSR_VIEW                 | CSR_BASE[2-3]*_[A-Z]*                 | CSR_BASE${env.id.upper}                 | True        | False             | False          
+CSR_EVAL                   | CSR_VIEW                 | CSR_VIEW[2-3]*_[A-Z]*                 | CSR_VIEW${env.id.upper}                 | True        | False             | False          
+CSR_VIEW                   | CSR_VIEW                 | CSR_VIEW[2-3]*_[A-Z]*                 | CSR_VIEW${env.id.upper}                 | False       | False             | False          
+DMV_BASE                   | DMV_VIEW                 | DMV_BASE[2-3]*_[A-Z]*                 | DMV_BASE${env.id.upper}                 | True        | True              | False          
+DMV_VIEW                   | DMV_VIEW                 | DMV_VIEW[2-3]*_[A-Z]*                 | DMV_VIEW${env.id.upper}                 | True        | True              | False          
+MBM_BASE                   | MBM_VIEW                 | MBM_BASE[2-3]*_[A-Z]*                 | MBM_BASE${env.id.upper}                 | True        | True              | False          
+MBM_VIEW                   | MBM_VIEW                 | MBM_VIEW[2-3]*_[A-Z]*                 | MBM_VIEW${env.id.upper}                 | False       | False             | False          
+PDCRDATA                   | PDCRDATA                 | PDCRDATA                              | PDCRDATA                                | False       | False             | False          
+PDCRINFO                   | PDCRINFO                 | PDCRINFO                              | PDCRINFO                                | False       | False             | False          
+CCW_AUD                    | CCW_AUD_VIEW             | CCW_AUD[2-3]*_[A-Z]*                  | CCW_AUD${env.id.upper}                  | True        | True              | True           
+CCW_ERR                    | CCW_VIEW                 | CCW_ERR[2-3]*_[A-Z]*                  | CCW_ERR${env.id.upper}                  | False       | False             | False          
+CCW_PUB                    | CCW_PUB                  | CCW_PUB[2-3]*_[A-Z]*                  | CCW_PUB${env.id.upper}                  | False       | False             | False          
+CCW_REF                    | CCW_VIEW                 | CCW_REF[2-3]*_[A-Z]*                  | CCW_REF${env.id.upper}                  | True        | True              | True           
+#
+# database_base            | view_database_base       | change_database_from                  | change_database_to                      | isa_base_db | isa_one_to_one_db | create_svc_view
+# ------------------------ | ------------------------ | ------------------------------------- | --------------------------------------- | ----------- | ----------------- | ---------------
+CCW_RPT                    | CCW_RPTVIEW              | CCW_RPT[2-3]*_[A-Z]*                  | CCW_RPT${env.id.upper}                  | True        | False             | False          
+CCW_STG                    | CCW_STG_VIEW             | CCW_STG[2-3]*_[A-Z]*                  | CCW_STG${env.id.upper}                  | False       | True              | False          
+CSR_STG                    | CSR_VIEW                 | CSR_STG[2-3]*_[A-Z]*                  | CSR_STG${env.id.upper}                  | False       | False             | False          
+DM_VIEW                    | CCW_VIEW                 | DM_VIEW[2-3]*_[A-Z]*                  | DM_VIEW${env.id.upper}                  | False       | False             | False          
+MBM_ERR                    | MBM_VIEW                 | MBM_ERR[2-3]*_[A-Z]*                  | MBM_ERR${env.id.upper}                  | False       | False             | False          
+MBM_STG                    | MBM_VIEW                 | MBM_STG[2-3]*_[A-Z]*                  | MBM_STG${env.id.upper}                  | False       | False             | False          
+CCW_DQ                     | CCW_DQ_VIEW              | CCW_DQ[2-3]*_[A-Z]*                   | CCW_DQ${env.id.upper}                   | True        | True              | True           
+CCW_LZ                     | CCW_LZ_VIEW              | CCW_LZ[2-3]*_[A-Z]*                   | CCW_LZ${env.id.upper}                   | False       | True              | False          
+CCW_SP                     | CCW_VIEW                 | CCW_SP[2-3]*_[A-Z]*                   | CCW_SP${env.id.upper}                   | False       | False             | False          
+CSR_LZ                     | CSR_VIEW                 | CSR_LZ[2-3]*_[A-Z]*                   | CSR_LZ${env.id.upper}                   | False       | False             | False          
+DM_AUD                     | CCW_VIEW                 | DM_AUD[2-3]*_[A-Z]*                   | DM_AUD${env.id.upper}                   | False       | False             | False          
+DM_ERR                     | CCW_VIEW                 | DM_ERR[2-3]*_[A-Z]*                   | DM_ERR${env.id.upper}                   | False       | False             | False          
+DM_STG                     | DM_VIEW                  | DM_STG[2-3]*_[A-Z]*                   | DM_STG${env.id.upper}                   | True        | True              | True           
+MBM_LZ                     | MBM_VIEW                 | MBM_LZ[2-3]*_[A-Z]*                   | MBM_LZ${env.id.upper}                   | False       | False             | False          
+DM_LZ                      | CCW_VIEW                 | DM_LZ[2-3]*_[A-Z]*                    | DM_LZ${env.id.upper}                    | False       | False             | False          

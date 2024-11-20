@@ -1,0 +1,339 @@
+# Filename: /home/SILVER/c44774a/da_unified_rules_engine/un_re/resources/cfg_rules_exceptions.lst
+#
+# Rules can have exceptions for a Project, Table or Column by specifying one of
+# those labels in the Exception Level field.
+# 
+# The object name varies depending on the Exception Level
+# If the Exception Level is Project,
+#       then the Object Name is compared to the current project name.
+# If the Exception Level is Table,
+#       then the Object Name is compared to the current table name.
+# If the Exception Level is Column,
+#       then the Object Name is compared to the current column name.
+# 
+# To specify a wildcard, specify ALL
+# 
+# To turn a rule off for all Projects, all Tables or all Columns, then
+#       simply remove that rule from the rules.lst file
+# 
+# The Comment column is not used by the Rules Engine, nevertheless, it does
+# come in handy to document the reason each exception is made.
+#
+# rule_id | project_nm       | table_nm                                     | column_nm                      | exp_yyyymmdd_dt     | comment_txt                    
+# ------- | ---------------- | -------------------------------------------- | ------------------------------ | ------------------- | -------------------------------
+ALL       | ALL              | CUST_INTGRD_DTL_INCRMTL_SV                   | ALL                            | 20231015            | For Nithin Odungattu           
+ALL       | ALL              | PROV_ADDR_CNTCT                              | ALL                            | None                | For Sugumar Balaji             
+ALL       | ALL              | TEMP_PHRMRDS_PHRM_CLM_2                      | ALL                            | None                | For Sugumar Balaji             
+ALL       | CCB              | REF_CLNCL_OUTRCH_COOL_CAP_DTL                | ALL                            | 20231216            | For Nithin Odungattu           
+ALL       | CCB              | REF_CLNCL_OUTRCH_OPPOR                       | ALL                            | 20231216            | For Nithin Odungattu           
+ALL       | CCB              | REF_CLNCL_OUTRCH_PROG                        | ALL                            | 20231216            | For Nithin Odungattu           
+ALL       | CCW-V2V          | REQ_CLBRTN_PERF_DRVR_HIST                    | ALL                            | 20240701            | For Praveen Sethuraman         
+ALL       | CCW-V2V          | REQ_CLBRTN_PERF_DRVR                         | ALL                            | 20240701            | For Praveen Sethuraman         
+ALL       | CCW-V2V          | REQ_CLBRTN_TMC_HIST                          | ALL                            | 20240701            | For Praveen Sethuraman         
+ALL       | CCW-V2V          | REQ_CLBRTN_TMC                               | ALL                            | 20240701            | For Praveen Sethuraman         
+ALL       | CLAIM            | CLM_LN_OSCR                                  | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | CLAIM            | CLM_LN_PHRM_AMT_OSCR                         | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | CLAIM            | CLM_LN                                       | ALL                            | 20221101            | For Sugumar Balaji             
+ALL       | CLAIM            | CLM_OSCR                                     | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | CLAIM            | CLM_PHRM_OSCR                                | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | CLAIM            | CLM_PHRM                                     | ALL                            | 20221101            | For Sugumar Balaji             
+ALL       | CLAIM            | CLM_PROV_OSCR                                | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | CLINICAL         | ALL                                          | ALL                            | 20230912            | for Jyotheeswara Bandarlapalle 
+ALL       | COMMON           | ALL                                          | ALL                            | 20221121            | For TDV Migration              
+ALL       | EVAL             | CLM_LN_PHRM_TRNSCTN_INCRMTL_EXT_SV_OSCR      | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | EVAL             | CLM_LN_PHRM_TRNSCTN_INCRMTL_SV_OSCR          | ALL                            | 20240316            | For Kumar Chawda Tushar        
+ALL       | OUTBOUND_EXTRACT | ESI_MED_CLM_EXTRT_DAILY_FORSYTH              | ALL                            | 20231215            | For Nithin Odungattu           
+ALL       | OUTBOUND_EXTRACT | TMP2_CTL_EXTRACT_FORSYTH                     | ALL                            | 20231215            | For Nithin Odungattu           
+ALL       | SCC_RPT          | SCC_NEPH_ALIGNED_MEMBERS_STG_DBX             | ALL                            | 20240401            | For Faron Ryan                 
+ALL       | SCC_RPT          | SCC_NEPH_CLAIM_DTL_STG_DBX                   | ALL                            | 20240401            | For Faron Ryan                 
+ALL       | SCC_RPT          | SCC_NEPH_ENC_ALGNMT_EXTRCT_DBX               | ALL                            | 20240401            | For Faron Ryan                 
+ALL       | SCC_RPT          | SCC_NEPH_ENC_CLM_DTL_EXTRT_DBX               | ALL                            | 20240401            | For Faron Ryan                 
+ALL       | SCC_RPT          | SCC_ONCLGY_ALGNMT_DTL_STG_DBX                | ALL                            | 20240401            | For Faron Ryan                 
+ALL       | SCC_RPT          | SCC_ONCLGY_ALGNMT_MED_DTL_STG_DBX            | ALL                            | 20240401            | For Faron Ryan                 
+ALL       | SCC_RPT          | SCC_ONCLGY_ALGNMT_PHRM_DTL_STG_DBX           | ALL                            | 20240401            | For Faron Ryan                 
+g003      | ALL              | ALL                                          | ALL                            | 20230910            | For testing                    
+g003      | CBH_CLINICAL     | CREATE_DDL_DQ_TOOLS_DENTAL_OHIP_MEMBER.HQL   | ALL                            | None                | for M. Krishnasamy             
+g003      | CBH_CLINICAL     | M_ODS_DHMO_CLAIM_PRC_PMT_TRANS_INCR.HQL      | ALL                            | None                | for M. Krishnasamy             
+g003      | HEDIS            | ALL                                          | ALL                            | 20220301            | for Tim Collins                
+g003      | TESTING          | CHECK_G003.MISSING_COMMA.HQL                 | ALL                            | None                | for testing purposes           
+g011      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r201      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r203      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r213      | ALL              | ALL                                          | PATNT_AGE_AMT                  | None                | For Ellen Hogan                
+r213      | ALL              | ALL                                          | PATNT_AGE_NUM                  | None                | For Ellen Hogan                
+r213      | ALL              | ALL                                          | PATNT_CARD_ID_SFX_CD           | None                | For Ellen Hogan                
+r213      | ALL              | CLM_PHRM_RBT_SV                              | PATNT_PAY_AMT                  | None                | For Jackson Rodrigues          
+r213      | ALL              | CUST_PROF_INCRMTL_SV                         | BEN_OPT_CD                     | None                | for Tammy Rezendes             
+r213      | ALL              | CUST_PROF_SV                                 | BEN_OPT_CD                     | None                | for Tammy Rezendes             
+r213      | ALL              | CUST_PRVCY_AUTHZN                            | PRVCY_MBR_ID                   | None                | For Manoj Kurup                
+r213      | ALL              | CUST_PRVCY_OPT_OUT                           | PRVCY_MBR_ID                   | None                | For Manoj Kurup                
+r213      | ALL              | CUST_PRVCY_PREFNC                            | PRVCY_MBR_ID                   | None                | For Manoj Kurup                
+r213      | ALL              | CUST_PRVCY_REP                               | PRVCY_MBR_ID                   | None                | For Manoj Kurup                
+r213      | ALL              | CUST_PRVCY                                   | PRVCY_MBR_ID                   | None                | For Manoj Kurup                
+r213      | ALL              | MBR_MTH_COMPRS_INCRMTL_SV                    | BEN_OPT_CD                     | None                | for Tammy Rezendes             
+r213      | ALL              | MBR_MTH_COMPRS                               | BEN_OPT_CD                     | None                | for Tammy Rezendes             
+r213      | ALL              | SCC_NEPH_ENC_CLM_ESRD                        | ALL                            | None                | For Vellaiyan Lakshmanan       
+r213      | CLAIM            | ALL                                          | PATNT%                         | None                | For Sue Petke                  
+r213      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r213      | EOC_RPT          | ALL                                          | ALL                            | None                | For Vellaiyan Lakshmanan       
+r213      | EVAL             | ALL                                          | ALL                            | 20220530            | For Sravan Kumar Jala          
+r213      | EVAL             | ALL                                          | PATNT_FRST_NM                  | 20220530            | For Sravan Kumar Jala          
+r213      | EVAL             | ALL                                          | PATNT_LAST_NM                  | 20220530            | For Sravan Kumar Jala          
+r213      | EVAL             | ALL                                          | PATNT_POSTL_CD                 | 20220530            | For Sravan Kumar Jala          
+r213      | EVAL             | ALL                                          | PATNT_ST_CD                    | 20220530            | For Sravan Kumar Jala          
+r213      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r213      | RXI-CCW-ESI-INTG | ALL                                          | ALL                            | None                | For Krishnakanth Avula         
+r213      | SCC_RPT          | ALL                                          | ALL                            | None                | For Vellaiyan Lakshmanan       
+r216      | ALL              | ALL                                          | CLM_SYS_CLM_IDNUM_SFX          | None                | for Sreeraj Kalappurakkal      
+r216      | ALL              | ALL                                          | CLM_SYS_CLM_ID_SFX             | None                | for Sreeraj Kalappurakkal      
+r216      | ALL              | CLNCL_PROG_ENRLMT                            | LAST_UPDT_BY_USR_ID            | None                | for M. Krishnasamy             
+r216      | ALL              | LAKE_DG_CASE_TRANS_DRVR                      | ACTION_CODE                    | None                | for M. Krishnasamy             
+r216      | ALL              | LAKE_DG_CASE_TRANS_DRVR                      | BY_WHOM                        | None                | for M. Krishnasamy             
+r216      | ALL              | LAKE_DG_CASE_TRANS_DRVR                      | FILE_NAME                      | None                | for M. Krishnasamy             
+r216      | ALL              | LAKE_DG_CASE_TRANS_DRVR                      | LAST_UPD                       | None                | for M. Krishnasamy             
+r216      | ALL              | LAKE_DG_CASE_TRANS_DRVR                      | RESULT_CODE                    | None                | for M. Krishnasamy             
+r216      | ALL              | LAKE_DG_CASE_TRANS_DRVR                      | VERBAL_DENIAL                  | None                | for M. Krishnasamy             
+r216      | CBH_CLINICAL     | CBHCLINICAL_INGESTION_DEPENDENCY_MATRIX_INCR | ALL                            | None                | for M. Krishnasamy             
+r216      | CBH_CLINICAL     | CLNCL_PROG_ENRLMT                            | ALL                            | None                | for M. Krishnasamy             
+r216      | CBH_CLINICAL     | LAKE_CLNCL_PROG_ENRLMT                       | ALL                            | None                | for M. Krishnasamy             
+r216      | CBH_CLINICAL     | LAKE_DG_CLNCL_PROG_ENRLMT_INCR               | ALL                            | None                | for M. Krishnasamy             
+r216      | CCB              | SFDC2_SFDC_ACCOUNT_DUNS                      | ALL                            | None                | For Arunraj Antony             
+r216      | CLINICAL         | ALL                                          | ANSWER_OPTIONS                 | None                | For NagendraKumar Nakka        
+r216      | CLINICAL         | ALL                                          | ORDER_PREFIX                   | None                | For NagendraKumar Nakka        
+r216      | EOC_RPT          | ALL                                          | CCC_TS                         | None                | For Arnab Roy                  
+r216      | EOC_RPT          | ALL                                          | EOC_PROV_CLM_DTL_QUAL_METRC_TS | None                | For Arnab Roy                  
+r216      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r216      | HEDIS            | CCW_HIST_CLAIMS_FOR_VST30                    | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | TEMP_OCSR07_CNVRT_VISIT_IN_LAYOUT            | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_ARCHIVE_MCO                         | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_ARCHIVE_PPO                         | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_CL_ARCHIVE_MCO                      | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_CL_ARCHIVE_PPO                      | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_ORION                               | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_OSCR                                | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN_VISION                              | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | HEDIS            | VISIT_IN                                     | ALL                            | None                | for Kaniamuthan Kaveri         
+r216      | OUTBOUND_EXTRACT | REF_RESV_FRC_FIT                             | FRC_TO_FIT_FCTR                | None                | For Anusha Yagnamuthy          
+r216      | OUTBOUND         | ESI_MED_CLM_EXTRT                            | PAID_DATE                      | 20230711            | For Venu Vem                   
+r216      | OUTBOUND         | ESI_MED_CLM_EXTRT                            | PROVIDER_NAME                  | 20230711            | For Venu Vem                   
+r217      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r219      | ALL              | ALL                                          | AREA_OF_INFLUC%                | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | BSS_OF_COST_DETRMTN_CD%        | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | CARE_OF_LN                     | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | CAUSE_OF_CLM_CD                | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | CLIENT_PRC_BSS_OF_COST_CD      | None                | For Viral Shah                 
+r219      | ALL              | ALL                                          | COST_OF_THRPY_PER_DAY_AMT      | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | CTGRY_OF_CARE_CD               | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | DRUG_UR_PNT_OF_SALE_MSG_TXT%   | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | DT_OF_ADD                      | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | DT_OF_LAST_AWP_CHG             | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | DT_OF_UPDT                     | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | EVID_OF_INSBLTY_TERMNTN_DT     | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | INGRDNT_BSS_OF_COST_DETRMTN_CD | None                | For Viral Shah                 
+r219      | ALL              | ALL                                          | INPA_LVL_OF_CARE_CD            | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | INPA_LVL_OF_GRP_CARE_CD        | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | KPI_MSR_AS_OF_DT               | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | LGTH_OF_THRPY_DAYS_NUM         | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | LVL_OF_SVC%                    | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | LVL_OF_URGNC%                  | None                | For Manoj Krup                 
+r219      | ALL              | ALL                                          | MBR_MTH_END_OF_MTH_DT          | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | MBR_MTH_FRST_OF_MTH_DT         | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | MBR_OF_ALLNC_IND               | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | OUT_OF_AREA_SVC_IND            | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | PARTY_PLAN_OF_BEN              | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | PNT_OF_SALE_RBT_AMT            | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | PRODT_PKG_SIZE_UNT_OF_MSR_CD   | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | RELS_OF_INFO_CD                | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | RESP_BASIS_OF_REIMB_DETRMTN_CD | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | RSLT_OF_SVC_CD%                | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | RTE_OF_ADMIN%                  | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | SITE_OF_CARE%                  | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | ST_OF_ILLINOIS_IND             | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | SUBMTD_CMPD_BASIS_OF_COST_CD   | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | SUBMTD_PAS_BASIS_OF_REQ_CD     | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | TM_OF_DAY_CD                   | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | TY_OF_BILL_CD                  | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | TY_OF_CARE_CAT_CD              | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | TY_OF_NEG_CHG_NM               | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | TY_OF_OUTRCH_ID                | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | TY_OF_SVC%                     | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | UNT_OF_MSR%                    | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | UNT_OF_USE_IND                 | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | UNT_OF_USE_PKG_IND             | None                | Grandfathered                  
+r219      | ALL              | ALL                                          | UTLZN_OF_PRGSTRN_IND           | None                | Grandfathered                  
+r219      | ALL              | REF_PMT_PROV_DTL                             | RT_SET_IN_OUT_YR_IND           | None                | For DeAnte Firmin              
+r219      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r219      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r219      | HEDIS            | ALL                                          | CAUSE_OF_CLM_CD                | None                | For Tim Collins                
+r219      | HEDIS            | ALL                                          | TY_OF_BILL                     | None                | For Tim Collins                
+r219      | HEDIS            | ALL                                          | TY_OF_BILL_CD                  | None                | For Tim Collins                
+r221      | ALL              | ALL                                          | CLM_340B_PHRM_TY_39_IND        | None                | For Vaishnavi Elluru           
+r221      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r221      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r221      | UNDERWRITING-RRS | RENL_RISK_INDIV_LVL_SCORE                    | ALL                            | None                | None                           
+r241      | ALL              | CHECK_GET_EXCEPTIONS                         | ALL                            | None                | None                           
+r241      | CLAIM            | ALL                                          | ALL                            | 20220215            | for Sravan Jala                
+r241      | CLINICAL         | ALL                                          | ALL                            | 20220215            | for Sravan Jala                
+r241      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r241      | EVAL             | ALL                                          | ALL                            | 20220215            | for Cathy Watt                 
+r241      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r243      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r253      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r253      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r258      | CCW-RPT          | %_A                                          | ALL                            | None                | CCW-RPT uses _A tables         
+r258      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r258      | V2V              | %_A                                          | ALL                            | None                | For Ganesan                    
+r260      | UNDERWRITING-RRS | RENL_RISK_INDIV_LVL_SCORE                    | ALL                            | None                | For nancy Downey               
+r299      | ALL              | ALL                                          | CLIENT_ID                      | None                | For Manoj                      
+r299      | ALL              | ALL                                          | ENTPR_CUST_ID                  | None                | For Manoj                      
+r299      | ALL              | CLNCL_ASSMT                                  | ASSMT_NM                       | None                | for M. Krishnasamy             
+r299      | ALL              | CLNCL_ASSMT                                  | CASE_ID                        | None                | for M. Krishnasamy             
+r299      | ALL              | CLNCL_ASSMT                                  | CLNCL_ASSMT_CONFGRTN_KEY       | None                | for M. Krishnasamy             
+r299      | ALL              | TEMP_REF_OPIOID_MME                          | GCN                            | None                | for Viral Shah Eval            
+r299      | CCB              | ALL                                          | BEN_PLAN_NUM                   | None                | For Arunraj Antony             
+r299      | CCB              | ALL                                          | BEN_PLAN_VRTN_ID               | None                | For Arunraj Antony             
+r299      | CCB              | ALL                                          | CLIENT_ACCT_NUM                | None                | For Arunraj Antony             
+r299      | CCB              | ECDB_CLIENT_ACCT_NT                          | NT_ID                          | None                | For Nithin Odungattu           
+r299      | CCB              | INDIV_PREFNC                                 | INDIV_ENTPR_ID                 | None                | for Arunraj Antony             
+r299      | CCB              | MBR_MTH_COMPRS_INCRMTL_SV                    | INDIV_ENTPR_ID                 | None                | for Arunraj Antony             
+r299      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r299      | EVAL             | ALL                                          | TEL_EXT_NUM                    | None                | For Judy Auger                 
+r299      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r299      | HEALTHPLAN_RPT   | CIG_CLM_BNCHMK_FCT                           | ALL                            | None                | for Arjun Viswanathan          
+r299      | HEALTHPLAN_RPT   | LZ_MB_CLM_LN_MED_MV                          | ALL                            | None                | for Arjun Viswanathan          
+r299      | HEALTHPLAN_RPT   | PROV_DIM                                     | ALL                            | None                | for Arjun Viswanathan          
+r299      | HEALTHPLAN_RPT   | STG_REF_PROV_APC_ASC_MAP                     | ALL                            | None                | for Arjun Viswanathan          
+r299      | HEALTHPLAN_RPT   | STG_TRUVEN_PROFL_REPRICER                    | ALL                            | None                | for Arjun Viswanathan          
+r299      | HEALTHPLAN_RPT   | TRVN_CLM_BNCHMK_DTL_FCT                      | ALL                            | None                | for Arjun Viswanathan          
+r299      | HEALTHPLAN_RPT   | TRVN_PROFL_CLM_DTL_FCT                       | ALL                            | None                | for Arjun Viswanathan          
+r299      | PRODUCER_360     | ALL                                          | OPPOR_DIR_IND                  | 20220501            | for Sushant Shekher            
+r299      | PROVIDER         | ALL                                          | TEL_EXT_NUM                    | None                | For Judy Auger                 
+r299      | UNDERWRITING-RRS | INDIV_LG_CLM_TRNSPRNCY_PDCTN                 | ALL                            | None                | For Nancy Downey               
+r299      | UNDERWRITING-RRS | RENL_RISK_INDIV_LVL_SCORE                    | ALL                            | None                | For Nancy Downey               
+r299      | UNDERWRITING-RRS | TEMP_GW5P_RENL_RISK_INDIV_LVL_SCORE          | ALL                            | None                | For Nancy Downey               
+r300      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r301      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r303      | ALL              | ALL                                          | CUST_ELGBTY_CVRG_TERMNTN_DT    | None                | For Piyush Bhalerao            
+r303      | ALL              | ALL                                          | SAVEON_ADVTG_CLM_IND           | None                | For Gina Ippolito              
+r303      | ALL              | MBR_MTH_COMPRS_CURR                          | CUST_ELGBTY_CVRG_TERMNTN_DT    | None                | For Piyush Bhalerao            
+r303      | CLAIM            | ALL                                          | DISPNS_FEE_AMT                 | 20230710            | For Gokul Velusaamy            
+r303      | CLAIM            | CLM_LN_PHRM_AMT                              | CLM_WATRFLL_BAL_IND            | 20230710            | For Gokul Velusaamy            
+r303      | CLINICAL         | CLNCL_HW_CUST_RWD_INCEN                      | ALL                            | 20231216            | For NagendraKumar Nakka        
+r303      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r306      | ALL              | GW5P_RENL_RISK_INDIV_LVL_SCORE               | CHNL_SRC_CD                    | None                | for Nancy Downey               
+r306      | ALL              | PRDS_NT_PROV_ENRLMT                          | ALL                            | None                | None                           
+r306      | ALL              | PRDS_NT_PROV_PANEL                           | ALL                            | None                | None                           
+r306      | ALL              | PRDS_PROV_ADDR                               | ALL                            | None                | None                           
+r306      | ALL              | PRDS_PROV_CNTRCT_CNTRCTE                     | ALL                            | None                | None                           
+r306      | ALL              | PROV_ST_ID                                   | ALL                            | None                | None                           
+r306      | ALL              | W_FFV_CIGNA_WEST_DTL                         | ALL                            | None                | None                           
+r306      | CBH_CLINICAL     | CBHCLINICAL_INGESTION_DEPENDENCY_MATRIX_INCR | CHNL_SRC_CD                    | None                | for M. Krishnasamy             
+r306      | CLINICAL         | HEV_STRUC_MBR_AGG                            | AGE_BAND_CD                    | 2022025             | for Arjun Kolangarakath        
+r306      | DA_PDA           | ALL                                          | ALL                            | None                | For Praveen Hariharasubramanian
+r306      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r306      | HEALTHPLAN_RPT   | TRVN_PROFL_CLM_DTL_FCT                       | ALL                            | None                | for Arjun Viswanathan          
+r306      | HIVE_DDL_RE_DIR  | ALL                                          | MY_EXCEPTIONAL_CD              | None                | None                           
+r306      | TESTING          | CHECK_GET_EXCEPTIONS                         | MY_EXCEPTIONAL_CD              | None                | None                           
+r307      | UNDERWRITING-RRS | GW5P_RENL_RISK_ACCT_LVL_SCORE                | ALL                            | None                | For Patzy Puron                
+r308      | CBH_CLINICAL     | ALL                                          | ALL                            | None                | for M. Krishnasamy             
+r401      | CLAIM            | CLM_LN_PHRM_AMT                              | ALL                            | 20230623            | Testing for Gokul and Steve    
+r401      | V2V              | STG_ALIGN_CUST_ALGNMT_DTL                    | ALL                            | None                | For PraveenKumar Sethuraman    
+r401      | V2V              | STG_CLM_LN_MEDRX_SVC                         | ALL                            | None                | For PraveenKumar Sethuraman    
+r401      | V2V              | STG_CUST_INTGRD_DTL_PIT_MV                   | ALL                            | None                | For PraveenKumar Sethuraman    
+r401      | V2V              | STG_RTBC_CAC_USAGE                           | ALL                            | None                | For PraveenKumar Sethuraman    
+r402      | V2V              | STG_ALIGN_CUST_ALGNMT_DTL                    | ALL                            | None                | For PraveenKumar Sethuraman    
+r402      | V2V              | STG_CLM_LN_MEDRX_SVC                         | ALL                            | None                | For PraveenKumar Sethuraman    
+r402      | V2V              | STG_CUST_INTGRD_DTL_PIT_MV                   | ALL                            | None                | For PraveenKumar Sethuraman    
+r402      | V2V              | STG_RTBC_CAC_USAGE                           | ALL                            | None                | For PraveenKumar Sethuraman    
+r403      | CLAIM            | CLM_LN_PHRM_AMT                              | ALL                            | 20230623            | Testing for Gokul and Steve    
+r403      | V2V              | STG_ALIGN_CUST_ALGNMT_DTL                    | ALL                            | None                | For PraveenKumar Sethuraman    
+r403      | V2V              | STG_CLM_LN_MEDRX_SVC                         | ALL                            | None                | For PraveenKumar Sethuraman    
+r403      | V2V              | STG_CUST_INTGRD_DTL_PIT_MV                   | ALL                            | None                | For PraveenKumar Sethuraman    
+r403      | V2V              | STG_RTBC_CAC_USAGE                           | ALL                            | None                | For PraveenKumar Sethuraman    
+r414      | CCW-V2V          | PROV_GRP_ENTTY                               | ALL                            | 20240701            | For Praveen Sethuraman         
+r414      | HEALTHPLAN_RPT   | GRPR_IP_CLM_MED_RCD_MAP                      | ALL                            | None                | for Arjun Viswanathan          
+r414      | HEALTHPLAN_RPT   | GRPR_OP_CLM_MED_RCD_MAP                      | ALL                            | None                | for Arjun Viswanathan          
+r414      | HEALTHPLAN_RPT   | STG_MED_CLM_GRPR_RSLT                        | ALL                            | None                | for Arjun Viswanathan          
+r414      | HEALTHPLAN_RPT   | STG_PROFL_REPRICER_RSLT                      | ALL                            | None                | for Arjun Viswanathan          
+r414      | HEALTHPLAN_RPT   | STG_TRUVEN_INPA_FINAL                        | ALL                            | None                | for Arjun Viswanathan          
+r414      | HEALTHPLAN_RPT   | STG_TRUVEN_PROFL_REPRICER                    | ALL                            | None                | for Arjun Viswanathan          
+r415      | HEALTHPLAN_RPT   | CIG_CLM_BNCHMK_AGG_FCT                       | ALL                            | None                | for Arjun Viswanathan          
+r415      | HEALTHPLAN_RPT   | CIG_CLM_BNCHMK_FCT                           | ALL                            | None                | for Arjun Viswanathan          
+r415      | HEALTHPLAN_RPT   | PROV_MAP_DIM                                 | ALL                            | None                | for Arjun Viswanathan          
+r415      | HEALTHPLAN_RPT   | TRVN_CLM_BNCHMK_AGG_FCT                      | ALL                            | None                | for Arjun Viswanathan          
+r415      | V2V              | STG_ALIGN_CUST_ALGNMT_DTL                    | ALL                            | None                | For PraveenKumar Sethuraman    
+r415      | V2V              | STG_CLM_LN_MEDRX_SVC                         | ALL                            | None                | For PraveenKumar Sethuraman    
+r415      | V2V              | STG_CUST_INTGRD_DTL_PIT_MV                   | ALL                            | None                | For PraveenKumar Sethuraman    
+r415      | V2V              | STG_RTBC_CAC_USAGE                           | ALL                            | None                | For PraveenKumar Sethuraman    
+r420      | ALL              | CHECK_R216                                   | ALL                            | None                | None                           
+r420      | ALL              | CHECK_R419                                   | ALL                            | None                | None                           
+r421      | DDL-TESTING      | ALL                                          | ALL                            | 20240409            | Steve testing                  
+r424      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r425      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r426      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r427      | ALL              | ALL                                          | PG_DESC                        | None                | For Glenn Decarolis            
+r427      | ALL              | CDC_PROV_PROF_SV                             | ALL                            | None                | For Judy Auger                 
+r427      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r428      | ALL              | CDC_PROV_PROF_SV                             | ALL                            | None                | For Judy Auger                 
+r428      | ALL              | NON_CLM_PAYMT_CUST_DTL_BKP07272023           | ALL                            | 20230826            | For Viral Shah                 
+r428      | CBH_CLINICAL     | CBHCLINICAL_INGESTION_DEPENDENCY_MATRIX_INCR | JOB_EXEC_ID                    | None                | for M. Krishnasamy             
+r428      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r428      | HEALTHPLAN_RPT   | GRPR_OP_CLM_STG_ERR                          | ALL                            | None                | for Arjun Viswanathan          
+r428      | HEALTHPLAN_RPT   | GRPR_OP_CLM_STG_FIX                          | ALL                            | None                | for Arjun Viswanathan          
+r428      | HEALTHPLAN_RPT   | GRPR_OP_CLM_STG                              | ALL                            | None                | for Arjun Viswanathan          
+r428      | HEALTHPLAN_RPT   | STG_GRPR_OP_CLM_STG_FALLOUT                  | ALL                            | None                | for Arjun Viswanathan          
+r429      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r429      | HEALTHPLAN_RPT   | STG_TRUVEN_OUTPA_FINAL                       | ALL                            | None                | for Arjun Viswanathan          
+r429      | HEALTHPLAN_RPT   | STG_TRUVEN_PROFL_REPRICER                    | ALL                            | None                | for Arjun Viswanathan          
+r429      | PRODUCER_360     | ALL                                          | OPPOR_DIR_IND                  | 20220501            | for Sushant Shekher            
+r430      | CBH_CLINICAL     | ALL                                          | CRET_BY_USR_KEY                | None                | for M. Krishnasamy             
+r430      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r431      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r432      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r433      | ALL              | CCW_LOAD_CTL_STATS_HIST                      | TRGT_SCHEMA_NM                 | None                | for Manoj Krup                 
+r433      | ALL              | CCW_LOAD_CTL_STATS_HIST                      | TRGT_TBLNM                     | None                | for Manoj Krup                 
+r433      | ALL              | CDC_PROV_PROF_SV                             | ALL                            | None                | For Judy Auger                 
+r433      | ALL              | CLIENT_BEN_SVC_INTGRD_SV                     | BEN_PLAN_NM                    | None                | for Jenna Shannon              
+r433      | ALL              | CLIENT_BEN_SVC_INTGRD_SV                     | PRODT_CTGRY_NM                 | None                | for Jenna Shannon              
+r433      | ALL              | CUST_INTGRD_DTL_INCRMTL_SV                   | ALL                            | 20230825            | For Nithin Odungattu           
+r433      | CBH_CLINICAL     | ALL                                          | ASSMT_NM                       | None                | for M. Krishnasamy             
+r433      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r434      | ALL              | CDC_PROV_PROF_SV                             | ALL                            | None                | For Judy Auger                 
+r434      | ALL              | MBR_MTH_COMPRS_CURR                          | ALL                            | None                | For Piyush Bhalerao            
+r434      | ALL              | MBR_MTH_DTL_CURR                             | ALL                            | None                | For Piyush Bhalerao            
+r434      | EVAL             | ALL                                          | TEL_EXT_NUM                    | None                | For Judy Auger                 
+r434      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r434      | PROVIDER         | ALL                                          | TEL_EXT_NUM                    | None                | For Judy Auger                 
+r435      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r436      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r437      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r438      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r439      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r440      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r441      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r442      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r443      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r444      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r445      | CBH_CLINICAL     | LAKE_DG_CASE_TRANS_DRVR                      | CREATE_DT_TM                   | None                | for M. Krishnasamy             
+r445      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r446      | ALL              | EPOC_PROV_CNTRCT                             | CRET_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_PROV_CNTRCT                             | UPDT_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_PROV_REGRP                              | CRET_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_PROV_REGRP                              | UPDT_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_RPT_PER                                 | CRET_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_RPT_PER                                 | UPDT_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_SECRTY_CTL_LVL                          | CRET_TS                        | 20210712            |                                
+r446      | ALL              | EPOC_SECRTY_CTL_LVL                          | UPDT_TS                        | 20210712            |                                
+r446      | CBH_CLINICAL     | ALL                                          | ASSMT_CMPLT_TS                 | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | CARE_PLAN_STAT_EFF_TS          | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | CRET_TS                        | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | INTRVNTN_BEG_TS                | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | INTRVNTN_END_TS                | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | INTRVNTN_TRGT_TS               | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | LOAD_TS                        | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | UPDT_TS                        | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | VOID_TS                        | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | VRBL_CNSNT_TS                  | None                | for M. Krishnasamy             
+r446      | CBH_CLINICAL     | ALL                                          | WRTN_CNSNT_TS                  | None                | for M. Krishnasamy             
+r446      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           
+r447      | HCTA_DATALAKE    | ALL                                          | ALL                            | None                | None                           

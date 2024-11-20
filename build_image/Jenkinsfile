@@ -1,0 +1,48 @@
+@Library('epf') _
+
+// Docker image metadata; consider incrementing version as image evolves
+String quayOrg = 'maa-dataops-rules-engine'
+String imageName = 'maa-dataops-rules-engine-build'
+String imageVers = '1.0.1'
+
+cignaBuildFlow {
+    cloudName = 'evernorth-qp-gov-solns-openshift-devops1'
+    githubConnectionName = 'Cigna Github'
+    logHistoryCount = '10'
+    phases = [
+        [
+            packagingType : 'kaniko',
+            branchPattern : '.*',
+            dockerfile    : 'Dockerfile',
+            dockerRegistry: 'registry-dev.cigna.com',
+            image         : [
+                org : quayOrg,
+                name: imageName,
+                tags: [
+                    [tag: 'latest',  expire: false],
+                    [tag: imageVers, expire: false]
+                ]
+            ],
+            quay: [
+                credentialsId: 'quay_dev_token'
+            ]
+        ],
+        [
+            packagingType : 'kaniko',
+            branchPattern : 'master',
+            dockerfile    : 'Dockerfile',
+            dockerRegistry: 'registry.cigna.com',
+            image         : [
+                    org : quayOrg,
+                    name: imageName,
+                    tags: [
+                            [tag: 'latest', expire: false],
+                            [tag: imageVers, expire: false]
+                    ]
+            ],
+            quay          : [
+                credentialsId: 'quay_prod_token'
+            ],
+        ]
+    ]
+}

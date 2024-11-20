@@ -1,0 +1,4 @@
+[EPEL8-custom-noarch]
+name=EPEL8-custom-noarch
+baseurl=http://lshrgw.sys.cigna.com/swift/v1/cpc_repo/epel-8-Sept-16-19/epel/
+enabled=1

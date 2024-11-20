@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "rules-engine"
+version = "0.1.0"
+description = ""
+authors = ["Joseph-Kroon-H54978 <joseph.kroon@cignahealthcare.com>"]
+readme = "README.md"
+packages = [{include = "un_re"}]
+include = [
+    "un_re/**/*"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "2.32.3"
+sqlparse = "0.4.4"
+urllib3 = "2.2.2"
+junitparser = "3.1.0"
+lxml = "4.9.1"
+antlr4-python3-runtime = "4.13.0"
+psycopg2-binary = "2.9.3"
+pandas = ">=2.0.3"
+
+[tool.poetry.scripts]
+run_rules = "un_re.un_re_main:main"
+parse_rules_engine_logs = "un_re.evaluate_output.parse_logs:parse_rules_engine_logs"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

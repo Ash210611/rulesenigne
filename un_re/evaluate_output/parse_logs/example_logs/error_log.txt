@@ -1,0 +1,6 @@
+Filenum, name: 2, tables/bohemian_rhapsody.sql
+ERROR-g003   : Syntax error found in this file
+Filenum, name: 3, tables/bohemian_rhapsody2.sql
+ERROR-r401   : Table is missing some expected content.
+Filenum, name: 3, tables/bohemian_rhapsody2.sql
+ERROR-r403   : Table has no PRIMARY INDEX clause.

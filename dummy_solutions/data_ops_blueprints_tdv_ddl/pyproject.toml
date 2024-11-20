@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "data_ops_blueprints_tdv_ddl"
+version = "0.1.0"
+description = ""
+authors = ["Zachary Hinds <Zachary.Hinds@evernorth.com>"]
+packages = [{include = "tests"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+pyliquibase = "^2.0.13"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+pandas = ">=1.3,<2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[data-ops-config]
+type = "tdv_ddl"

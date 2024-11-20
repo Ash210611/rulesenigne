@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "parse-output-logs"
+version = "0.1.0"
+description = ""
+authors = ["Antoine Kurukchi <antoine.kurukchi@evernorth.com>"]
+packages = [{include = "parse_logs"}]
+include = [
+    "parse_logs/**/*"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "2.32.3"
+urllib3 = "2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+parse_rules_engine_logs = "parse_logs:parse_rules_engine_logs"

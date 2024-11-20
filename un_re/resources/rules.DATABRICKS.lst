@@ -1,0 +1,107 @@
+#
+# This file lists the rules that will be enforced by this rules engine.
+# Any lines in this file containing a '#' will be considered comments.
+# Comment lines will be ignored.
+#
+# Columns are separated using a pipe delimiter.
+#
+# General rules apply to all input files.  It is not realistic to turn those
+# off, so those are always on, and are included here for documentation purposes.
+#
+# -----+-------+---------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | DATABRICKS | short_desc
+# -----+-------+---------+-----------------------------------------------------------------
+g001   | ERROR    | Input files must be readable in the UTF-8 code set.
+# g002   | WARNING  | SQL statements must end with a semi-colon.
+g003   | ERROR      | Each SQL statement must be a valid SQL statement.
+#
+# g004   | ERROR      | A database context must exist.
+#			DATABRICKS piplines set their database context in the pipeline connection
+#
+g005   | WARNING    | The UN_RE must be able to classify what kind of command it is reading.
+g011   | WARNING    | Use consistent capitalization.
+g012   | ERROR    | Ruleset Indicators must be one of the valid values.
+# g013   | WARNING  | The TechDebt ruleset indicator was used
+#
+# -----+-------+---------+-----------------------------------------------------------------
+r002   | WARNING  | Every table must have a primary key
+# -----+-------+---------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | DATABRICKS | short_desc
+# -----+-------+---------+-----------------------------------------------------------------
+r201   | WARNING  | Physical column comment cannot be null, empty, spaces, or blank.
+# r203   | WARNING  | Physical column comment must be 256 characters or less.
+r205   | WARNING    | Physical column name should not contain bad characters.
+r207   | WARNING    | Physical column comment should not contain bad characters.
+r213   | WARNING    | Physical column name should not use obsolete business terms.
+r216   | WARNING    | Physical column name should include an approved classword
+r219   | WARNING    | Physical column name must not contain articles.
+r221   | WARNING    | Physical column name array index should follow the classword.
+# -----+--+----+---------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | DATABRICKS   | short_desc
+# -----+-------+---------+-----------------------------------------------------------------
+r241   | WARNING      | Physical table comment cannot be blank, empty or null.
+# r243   | WARNING      | Physical table comment must be 256 characters or less.
+r245   | WARNING      | Physical table name should not contain bad characters.
+# r247   | WARNING      | Physical table comment should not contain bad characters.
+r253   | WARNING      | Table name should not contain obsolete business terms.
+r258   | WARNING      | Table name must not contain articles.
+r260     | WARNING      | Table names should be unique.
+# r298   | WARNING      | TMP tables should be renamed TEMP tables.
+r299   | WARNING      | Columns should use a consistent data type.
+# r300   | WARNING      | Table name must be 128 characters or less.
+# r301   | WARNING      | Column name must be 128 characters or less.
+r306   | WARNING      | CD Columns should use a VARCHAR(10) data type.
+r309   | WARNING      | Databricks Optimize ZORDER columns should not be dates.
+# -----+-------+---------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | DATABRICKS   | short_desc
+# -----+-------+---------+-----------------------------------------------------------------
+r414   | WARNING      | IDENTITY datatypes are not allowed.
+r416   | WARNING      | Control characters should not be used.
+# r419   | WARNING | Date/Timestamp columns come in pairs when marking intervals.
+#
+# -----+-------+---------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | DATABRICKS  | short_desc
+# -----+-------+---------+-----------------------------------------------------------------
+# Physical Datatype Rules
+# r422   | TBD          | Check if this table is a valid reference table.
+# r423   | TBD          | A unique index should not include the term date or timestamp.
+#
+r424   | WARNING      | Classword CNT    (Count)       should have data type Integer.
+r425   | WARNING      | Classword AMT    (Amount)      should have data type Number.
+r426   | WARNING      | Classword DT     (Date)        should have data type Date.
+r427   | WARNING      | Classword DESC   (Description) should have data type Varchar(255).
+r428   | WARNING      | Classword ID     (Identifier)  should have data type Number or Varchar().
+r429   | WARNING      | Classword IND    (Indicator)   should have data type Char(1).
+r430   | WARNING      | Classword KEY    (Key)         should have data type Char(32) or BigInt.
+r431   | WARNING      | Classword LMT    (Limit)       should have data type Number.
+r432   | WARNING      | Classword LN     (Line)        should have data type Varchar().
+r433   | WARNING      | Classword NM     (Name)        should have data type Varchar(100) or Varchar(255).
+r434   | WARNING      | Classword NUM    (Number)      should have data type Varchar() or Number.
+r435   | WARNING      | Classword OBJ    (Object)      should have data type BLOB.
+r436   | WARNING      | Classword PCT    (Percent      should have data type Number.
+r437   | WARNING      | Classword PCTG   (Percentage)  should have data type Number.
+r438   | WARNING      | Classword PCTL   (Percentile)  should have data type Number.
+r439   | WARNING      | Classword QUALR  (Qualifier)   should have data type String.
+r440   | WARNING      | Classword QTY    (Quantity)    should have data type Number.
+r441   | WARNING      | Classword RNG    (Range)       should have data type Number.
+r442   | WARNING      | Classword RT     (Rating)      should have data type Number.
+r443   | WARNING      | Classword RTO    (Ratio)       should have data type Number.
+r444   | WARNING      | Classword TXT    (Text)        should have data type Varchar().
+r456   | WARNING      | Classword TY     (Type)        should have data type Varchar().
+r454   | WARNING      | Classword TYP    (Type)        should have data type Varchar().
+r445   | WARNING      | Classword TM     (Time)        should have data type Time.
+r446   | WARNING      | Classword TS     (Timestamp)   should have data type Datetime or Timestamp.
+r447   | WARNING      | Classword YR     (Year)        should have data type Number.
+r450   | WARNING      | Classword YR_MTH (YearMonth)   should have data type Char(6).
+# -----+-------+---------+-----------------------------------------------------------------
+# r448   | TBD     | Materialized View name should end with _SV rather than _MV.
+# r455   | TBD     | A class word with no token to the left is invalid.
+# -----+-------+---------+-----------------------------------------------------------------
+# rule | Rules-Engine-Type:                                                |
+# id   | DATABRICKS | short_desc
+# -----+---+----+--------------+-----------------------------------------------------------

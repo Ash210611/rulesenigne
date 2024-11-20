@@ -1,0 +1,5 @@
+[EPEL7-custom-noarch]
+name=EPEL7-custom-noarch
+baseurl=http://lshrgw.sys.cigna.com/swift/v1/satellite_bucket/EPEL7/EPEL/EPEL7
+enabled=1
+

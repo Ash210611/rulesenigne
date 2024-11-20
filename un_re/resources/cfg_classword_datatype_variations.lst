@@ -1,0 +1,198 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_classword_datatype_variations.lst
+#
+# Most CD columns should be a varchar(10).
+# 
+# This file will specify which CD column names are approved to vary from that, and
+# what size the CD can be for those variations
+# 
+# Other variations for other classwords can be scanned by filtering on the
+# classword column
+#
+# classword | column_nm                     | datatype | size | comment_txt                     
+# --------- | ----------------------------- | -------- | ---- | --------------------------------
+CD          | %FIPS_CD                      | VARCHAR  | 15   | For Adam Chase                  
+CD          | %POSTL_CD                     | VARCHAR  | 20   | Using a wildcard for Manoj      
+CD          | %PROC_CD$                     | VARCHAR  | 11   | For US1709958                   
+CD          | %ST_CD                        | CHAR     | 2    | Using a wildcard for Manoj      
+CD          | %ST_CD                        | VARCHAR  | 2    | Using a wildcard for Manoj      
+CD          | ACCT_SUBTY_CD                 | VARCHAR  | 30   |                                 
+CD          | ACCT_TY_CD                    | VARCHAR  | 30   |                                 
+CD          | ARGUS_ERR_1_CD                | VARCHAR  | 3    | For US1068124                   
+CD          | ARGUS_ERR_2_CD                | VARCHAR  | 3    | For US1068124                   
+CD          | ARGUS_ERR_3_CD                | VARCHAR  | 3    | For US1068124                   
+CD          | ARGUS_ERR_4_CD                | VARCHAR  | 3    | For US1068124                   
+CD          | ARGUS_ERR_5_CD                | VARCHAR  | 3    | For US1068124                   
+CD          | ATTRIB_CD                     | VARCHAR  | 20   | For DED-3648                    
+CD          | ATTRIB_CD                     | VARCHAR  | 50   | For DED-3648                    
+CD          | BASE_HMO_CD                   | VARCHAR  | 3    | For US1064815                   
+CD          | BEN_FEAT_CD                   | VARCHAR  | 30   | For US1049744                   
+CD          | BG_FIPS_CD                    | VARCHAR  | 12   | For Adam Chase                  
+CD          | BILL_PROV_POSTL_CD            | VARCHAR  | 15   | Code Length should be 15        
+CD          | BILL_PROV_SPECLTY_CD          | VARCHAR  | 15   | Code Length should be 15        
+CD          | BILL_PROV_SRC_SPECLTY_CD      | VARCHAR  | 15   | Code Length should be 15        
+CD          | BILL_PROV_ST_CD               | CHAR     | 15   | A state code                    
+CD          | BILL_PROV_ST_CD               | VARCHAR  | 15   | -- 2nd variation                
+CD          | BODY_SITE_CTGRY_SCAN_CD       | VARCHAR  | 100  | Code Length should be 100       
+CD          | BRNCH_CD                      | VARCHAR  | 6    | For US1068124                   
+CD          | BRNCH_CD                      | VARCHAR  | 15   | DED-5742                        
+CD          | CARVE_OUT_CTGRY_CD            | VARCHAR  | 50   | Code Length should be 50        
+CD          | CCN_TIER_CD                   | VARCHAR  | 30   | For US1049744                   
+CD          | CERT_CD                       | VARCHAR  | 25   | Code Length should be 25        
+CD          | CIGNA_ASGN_PCP_CD             | VARCHAR  | 30   | Code Length should be 30        
+CD          | CIGNA_RELSHP_CD               | VARCHAR  | 30   | Code Length should be 30        
+CD          | CLAIM_TYP_CD                  | CHAR     | 2    | For US1068124                   
+CD          | CLIENT_ASGN_DISCRTNRY_CD      | VARCHAR  | 20   | For Sandeep Gunda               
+CD          | CLIENT_PRC_CD                 | CHAR     | 1    | US1208211                       
+CD          | CLIENT_ST_CD                  | CHAR     | 30   | A state code                    
+CD          | CLIENT_ST_CD                  | VARCHAR  | 30   | -- 2nd variation                
+CD          | CLIENT_TY_CD                  | VARCHAR  | 3    | For US1064815                   
+CD          | CLM_SYS_CD                    | CHAR     | 1    | For US1068124                   
+CD          | CLNCL_SRC_SYS_LOC_CD          | VARCHAR  | 4    | For US1045441                   
+CD          | CNFLCT_CD                     | VARCHAR  | 2    | For US1068124                   
+CD          | CNTCT_FAX_AREA_CD             | VARCHAR  | 20   | For US1049744                   
+CD          | CNTCT_ST_CD                   | VARCHAR  | 30   | For US1049744                   
+CD          | CNTCT_TEL_AREA_CD             | VARCHAR  | 20   | For US1049744                   
+CD          | CNTRCT_ENTTY_ST_CD            | CHAR     | 3    | A state code                    
+CD          | CNTRCT_ENTTY_ST_CD            | VARCHAR  | 3    | -- 2nd variation                
+CD          | COB_CVRG_TY_CD                | VARCHAR  | 30   | For US1049744                   
+CD          | COPAY_BEN_CD                  | CHAR     | 1    | For US1068124                   
+CD          | COV_GRP_CD                    | VARCHAR  | 5    | For US1068124                   
+CD          | CUST_GENDR_CD                 | VARCHAR  | 30   | Code Length should be 30        
+CD          | CUST_INTRD_PRODT_CTGRY_CD     | VARCHAR  | 30   | For US1293475                   
+CD          | CUST_INTRD_PRODT_TY_CD        | VARCHAR  | 30   | For US1293475                   
+CD          | CUST_MRTL_STAT_CD             | VARCHAR  | 30   | Code Length should be 30        
+CD          | CUST_MRTL_ST_CD               | CHAR     | 30   | A state code                    
+CD          | CUST_MRTL_ST_CD               | VARCHAR  | 30   | -- 2nd variation                
+CD          | CUST_REP_ST_CD                | CHAR     | 30   | A state code                    
+CD          | CUST_REP_ST_CD                | VARCHAR  | 30   | -- 2nd variation                
+CD          | CUST_SRC_SYS_LOC_CD           | VARCHAR  | 4    | For US1045441                   
+CD          | CUST_ST_CD                    | CHAR     | 30   | A state code                    
+CD          | CUST_ST_CD                    | VARCHAR  | 30   | -- 2nd variation                
+CD          | CVRG_CD                       | VARCHAR  | 12   | For US1068124                   
+CD          | DIAG1_QUAL_CD                 | CHAR     | 2    | For US1068124                   
+CD          | DIAG2_CD                      | VARCHAR  | 15   | For US1068124                   
+CD          | DIAG3_CD                      | VARCHAR  | 15   | For US1068124                   
+CD          | DIAG4_CD                      | VARCHAR  | 15   | For US1068124                   
+CD          | DIAG_CD                       | CHAR     | 6    | For US1068124                   
+CD          | DRUG_APPL_CD                  | CHAR     | 1    | US1208211                       
+CD          | DRUG_CD                       | VARCHAR  | 30   | Code Length should be 30        
+CD          | DRUG_LIST_PHRM_OPT_VAL_CD     | VARCHAR  | 15   | Code Length should be 15        
+CD          | DRUG_UR_CFLCT_CD              | VARCHAR  | 2    | US1208211                       
+CD          | ELGBTY_BRNCH_CD               | VARCHAR  | 15   | For DED-5742                    
+CD          | ENGMT_LVL_CD                  | VARCHAR  | 255  | For US1045441                   
+CD          | ENRLMT_OUTCM_CD               | VARCHAR  | 255  | For US1045441                   
+CD          | ENRLMT_RSN_CD                 | VARCHAR  | 255  | For US1045441                   
+CD          | EXCHG_COST_SHARE_RED_CD       | VARCHAR  | 2    | For US1064815                   
+CD          | EXCHG_QUAL_STAT_CD            | CHAR     | 2    | For US1064815                   
+CD          | EXCHG_QUAL_STAT_CD            | VARCHAR  | 2    | For US1064815                   
+CD          | FRMLRY_MGMNT_TIER_CD          | VARCHAR  | 2    | US1208211                       
+CD          | FUNDNG_SVC_CD                 | CHAR     | 1    | For US1068124                   
+CD          | GENDER_CD                     | VARCHAR  | 30   | DED-5742                        
+CD          | GENRC_CD_NUM                  | VARCHAR  | 5    | For US1068124                   
+CD          | GLBL_STEP_THRPY_ADJUDN_CD     | VARCHAR  | 2    | US1208211                       
+CD          | HLTH_INS_EXCHG_SLD_CD         | VARCHAR  | 30   | Code Length should be 30        
+CD          | HMO_CD                        | VARCHAR  | 3    | For US1068124                   
+CD          | HOME_ADDR_STE_CD              | VARCHAR  | 30   | For DED-5742                    
+CD          | HOME_ST_CD                    | CHAR     | 30   | A state code                    
+CD          | HOME_ST_CD                    | VARCHAR  | 30   | -- 2nd variation                
+CD          | ICD_CD                        | VARCHAR  | 50   | For DED-3648                    
+CD          | ICD_PROC_CD_%                 | VARCHAR  | 11   | Array indexes vary from 01 to 28
+CD          | INSTTN_OTHR_PROC_CD%          | VARCHAR  | 11   | For US1185120                   
+CD          | INTRVNTN_CD                   | VARCHAR  | 2    | For US1068124                   
+CD          | LGL_ENTTY_CD                  | VARCHAR  | 3    | For US1064815                   
+CD          | LOB_CD                        | VARCHAR  | 4    | Code Length should be 4         
+CD          | LOC_ST_CD                     | CHAR     | 25   | A state code                    
+CD          | LOC_ST_CD                     | VARCHAR  | 25   | -- 2nd variation                
+CD          | MAINT_SRC_CD                  | CHAR     | 1    | US1208211                       
+CD          | MBR_ST_CD                     | CHAR     | 25   | A state code                    
+CD          | MBR_ST_CD                     | VARCHAR  | 25   | -- 2nd variation                
+CD          | MEDCD_ST_CD                   | CHAR     | 25   | A state code                    
+CD          | MEDCD_ST_CD                   | VARCHAR  | 25   | -- 2nd variation                
+CD          | MEDCR_TY_CD                   | VARCHAR  | 30   | For US1049744                   
+CD          | MED_MGMNT_PLAN_CD             | VARCHAR  | 30   | Code Length should be 30        
+CD          | MEMBR_RELSHP_CD               | VARCHAR  | 30   | For DED-5742                    
+CD          | MEM_ZIP_CD                    | VARCHAR  | 5    | For US1064815                   
+CD          | NCPDP_REJ_CD%                 | CHAR     | 3    | For US1068124, from 1 to 5      
+CD          | NT_PRODT_TY_CD                | VARCHAR  | 30   | For Saptarshi Bandopadhyay      
+CD          | NT_STAT_CD                    | VARCHAR  | 25   | Code Length should be 25        
+CD          | OCCUR_CD                      | VARCHAR  | 30   | For US1293475                   
+CD          | ORDR_PROV_PCP_PROV_SPECLTY_CD | VARCHAR  | 25   | For US1293475                   
+CD          | ORIG_HMO_CD                   | VARCHAR  | 3    | For US1068124, from 1 to 5      
+CD          | OTHR_CVRG_CD                  | CHAR     | 2    | For US1068124                   
+CD          | OUTCM_CD                      | VARCHAR  | 2    | For US1068124                   
+CD          | OUTNT_RSN_CD                  | VARCHAR  | 20   | For US1045441                   
+CD          | PATNT_POSTL_CD                | VARCHAR  | 15   | Code Length should be 15        
+CD          | PATNT_ST_CD                   | CHAR     | 30   | A state code                    
+CD          | PATNT_ST_CD                   | VARCHAR  | 30   | -- 2nd variation                
+CD          | PAYMT_KIND_CD                 | VARCHAR  | 3    | For US1064815                   
+CD          | PCP_PROV_SPECLTY_CD           | VARCHAR  | 25   | Code Length should be 25        
+CD          | PEOPLE_GRP_CD                 | VARCHAR  | 6    | For US1068124                   
+CD          | PHRM_COST_SRC_CD              | CHAR     | 1    | US1208211                       
+CD          | PHRM_IDNTY_ST_CD              | CHAR     | 25   | A state code                    
+CD          | PHRM_IDNTY_ST_CD              | VARCHAR  | 25   | -- 2nd variation                
+CD          | PLAN_DRUG_STAT_CD             | CHAR     | 1    | US1208211                       
+CD          | POS_GRP_CD                    | VARCHAR  | 30   | Code Length should be 30        
+CD          | PRIM_DISPNSR_TY_CD            | VARCHAR  | 25   | Code Length should be 25        
+CD          | PRIM_RNDR_PROV_SPECLTY_CD     | VARCHAR  | 15   | Code Length should be 15        
+CD          | PRMCY_CD                      | VARCHAR  | 30   | For US1293475                   
+CD          | PRODT_CTGRY_CD                | VARCHAR  | 30   |                                 
+CD          | PRODT_FAM_CD                  | VARCHAR  | 30   | Code Length should be 30        
+CD          | PRODT_GRP_TY_CD               | VARCHAR  | 6    | For US1064815                   
+CD          | PRODT_KIND_CD                 | VARCHAR  | 3    | For US1064815                   
+CD          | PRODT_SUB_TY_CD               | VARCHAR  | 6    | For US1064815                   
+CD          | PRODT_TY_CD                   | VARCHAR  | 25   |                                 
+CD          | PRODT_TY_CD                   | VARCHAR  | 30   |                                 
+CD          | PROG_SVC_TY_CD                | VARCHAR  | 255  | For US1045441                   
+CD          | PROV_ALGNMT_MTHD_CD           | VARCHAR  | 20   | For US1061943                   
+CD          | PTNT_SEX_CD                   | CHAR     | 1    | For US1068124                   
+CD          | PTNT_ZIP_CD                   | VARCHAR  | 15   | For US1068124                   
+CD          | REC_SRC_CD                    | CHAR     | 1    | For US1068124                   
+CD          | REFRL_DETRMTN_STAT_CD         | VARCHAR  | 255  | For US1045441                   
+CD          | RELIG_DESGTN_CD               | VARCHAR  | 2    | For US1064815                   
+CD          | RELTN_CD                      | VARCHAR  | 2    | For US1068124                   
+CD          | REL_CD                        | CHAR     | 1    | For US1068124                   
+CD          | REVNU_CD                      | VARCHAR  | 11   | Code Length should be 11        
+CD          | REVWR_SPECLTY_CD              | VARCHAR  | 255  | For US1064815                   
+CD          | REVW_RSN_CD                   | VARCHAR  | 255  | For US1064815                   
+CD          | RNDR_PROV_POSTL_CD            | VARCHAR  | 15   | Code Length should be 15        
+CD          | RNDR_PROV_SPECLTY_CD          | VARCHAR  | 15   | Code Length should be 15        
+CD          | RNDR_PROV_TAXNMY_CD           | VARCHAR  | 15   | Code Length should be 15        
+CD          | RNDR_SRC_PROV_SPECLTY_CD      | VARCHAR  | 15   | Code Length should be 15        
+CD          | RTE_ADMIN_CD                  | VARCHAR  | 11   | For US1293475                   
+CD          | RTE_OF_ADMIN_CD               | VARCHAR  | 11   | Code Length should be 11        
+CD          | RTNG_TY_CD                    | VARCHAR  | 1    | For US1064815                   
+CD          | RX_DRUG_BEN_CD                | VARCHAR  | 12   | US1208211                       
+CD          | SEC_DISPNSR_TY_CD             | VARCHAR  | 25   | Code Length should be 25        
+CD          | SEX_CD                        | CHAR     | 1    | For US1068124                   
+CD          | SITUS_STE_CD                  | VARCHAR  | 2    | For US1068124                   
+CD          | SRC_%_CD                      | CHAR     | 1    | For US1075474                   
+CD          | SRC_%_CD                      | CHAR     | 2    | For US1075474                   
+CD          | SRC_%_CD                      | CHAR     | 4    | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 2    | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 3    | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 4    | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 5    | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 11   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 12   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 15   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 20   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 25   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 30   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 40   | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 100  | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 255  | For US1075474                   
+CD          | SRC_%_CD                      | VARCHAR  | 256  | For US1075474                   
+CD          | STE_CD                        | VARCHAR  | 2    | For US1068124                   
+CD          | SVC_CD                        | VARCHAR  | 11   | For DED-5742                    
+CD          | SVC_GRP_CD                    | VARCHAR  | 30   | For US1049744                   
+CD          | TME_PROD_GRP_CD               | CHAR     | 1    | For US1068124                   
+CD          | TRANS_TY_CD                   | VARCHAR  | 1    | For US1064815                   
+CD          | TRNSCTN_CD                    | CHAR     | 1    | For US1049744                   
+CD          | TRTRY_DISPNSR_TY_CD           | VARCHAR  | 25   | Code Length should be 25        
+CD          | TY_BILL_CD                    | VARCHAR  | 20   | For US1293475                   
+CD          | TY_OF_BILL_CD                 | VARCHAR  | 20   | Code Length should be 20        
+CD          | UM_CHNL_SRC_CD                | VARCHAR  | 30   | Code Length should be 30        
+CD          | V_PRODT_CTGRY_CD              | VARCHAR  | 30   | For US1185120                   
+ID          | BUS_SEG_ID                    | CHAR     | 4    | For Viral Shah                  
+NUM         | prnt_client_acct_num          | VARCHAR  | 7    | None                            
+NUM         | prnt_client_acct_num          | VARCHAR  | 50   | None                            

@@ -1,0 +1,135 @@
+#
+# This file lists the rules that will be enforced by the TERADATA_DDL rules engine.
+# Any lines in this file containing a '#' will be considered comments.
+# Comment lines will be ignored.
+#
+# Columns are separated using a pipe delimiter.
+#
+# Severity Abbreviations:
+# E     = ERROR
+# W     = WARNING
+# T     = TBD, To Be Developed
+# N     = NA, does not apply to that rules-engine type
+#
+# -----+--------------+--------------------------------------------------------------------------------------------
+# rule | Rules-Engine-Type:
+# id   | TERADATA_DDL | short_description
+# -----+--------------+--------------------------------------------------------------------------------------------
+g001   | ERROR        | Input files must be readable in the UTF-8 code set.
+# g002 | WARNING      | SQL statements must end with a semi-colon.
+g003   | ERROR        | Each SQL statement must be a valid SQL statement.
+g004   | ERROR        | A database context must exist.
+g005   | WARNING      | The UN_RE must be able to classify what kind of command it is reading.
+g011   | WARNING      | Use consistent capitalization.
+g012   | ERROR        | Ruleset Indicators must be one of the valid values.
+# g013 | WARNING      | The TechDebt ruleset indicator was used
+#
+# -----+--------------+--------------------------------------------------------------------------------------------
+# rule | Rules-Engine-Type:
+# id   | TERADATA_DDL | short_description
+# -----+--------------+--------------------------------------------------------------------------------------------
+r201   | ERROR        | Physical column comment cannot be null, empty, spaces, or blank.
+r203   | ERROR        | Physical column comment must be 256 characters or less.
+r205   | ERROR        | Physical column name should not contain bad characters.
+r207   | ERROR        | Physical column comment should not contain bad characters.
+r210   | TBD          | Physical column comment should differ from the datamodel or physical column name.
+r213   | ERROR        | Physical column name should not use obsolete business terms.
+r214   | TBD          | Datamodel attribute name should differ from the physical column name.
+r215   | TBD          | Datamodel column name should include an approved classword.
+r216   | ERROR        | Physical column name should include an approved classword
+r219   | ERROR        | Physical column name must not contain articles.
+r221   | WARNING      | Physical column name array index should follow the classword.
+r223   | TBD          | Physical column name should be derived from Datamodel name.
+# -----+--------------+--------------------------------------------------------------------------------------------
+# rule | Rules-Engine-Type:
+# id   | TERADATA_DDL | short_description
+# -----+--------------+--------------------------------------------------------------------------------------------
+r241   | ERROR        | Physical table comment cannot be blank, empty or null.
+r243   | WARNING      | Physical table comment must be 256 characters or less.
+r245   | ERROR        | Physical table name should not contain bad characters.
+r247   | ERROR        | Physical table comment should not contain bad characters.
+r250   | TBD          | Physical table comment should be a full sentence.
+r251   | TBD          | Datamodel table comment should match the physical table comment.
+r253   | WARNING      | Table name should not contain obsolete business terms.
+r254   | TBD          | Datamodel table name should not match the physical table name.
+r255   | TBD          | Every table is represented in a physical diagram.
+r256   | TBD          | The table domain is listed.
+r258   | ERROR        | Table name must not contain articles.
+r259   | TBD          | Datamodel table and column names should be unique.
+r260   | ERROR        | Table names should be unique.
+r261   | TBD          | Physical table name should be derived from Datamodel table name.
+r262   | TBD          | Table does not contain duplicate relationships.
+r298   | WARNING      | TMP tables should be renamed TEMP tables.
+r299   | ERROR        | Columns should use a consistent data type.
+r300   | ERROR        | Table name must be 128 characters or less.
+r301   | ERROR        | Column name must be 128 characters or less.
+r303   | ERROR        | Physical column name should be derived from Datamodel column Names.
+r306   | ERROR        | CD Columns should use a VARCHAR(10) data type.
+# -----+--------------+--------------------------------------------------------------------------------------------
+# rule | Rules-Engine-Type:
+# id   | TERADATA_DDL | short_description
+# -----+--------------+--------------------------------------------------------------------------------------------
+r401   | ERROR        | Create Table commands must include all required content.
+r402   | ERROR        | Create Table command must exclude any unexpected content.
+r403   | ERROR        | Every TD table should have a primary index.
+# r404 | WARNING      | Every TD table should have a primary Index. (Duplicate of 403?)
+#
+r405   | ERROR        | Only collect statistics on a table once.
+r406   | ERROR        | Views should say locking row for access.
+r407   | ERROR        | Certain Alter Table commands are not allowed.
+r408   | ERROR        | Backup table names must use the _BAK suffix.
+r411   | ERROR        | Tables and views are in right database.
+r412   | ERROR        | Insert statements should not say Select-star.
+r413   | ERROR        | Views must have a database qualifier.
+r414   | ERROR        | IDENTITY datatypes are not allowed.
+r415   | ERROR        | BASE tables should not be Multiset.
+r416   | ERROR        | Control characters should not be used.
+r417   | TBD          | A comment is unique across the columns of a table.
+r418   | TBD          | Every table should have a PK named Table_Name_KEY.
+r419   | TBD          | Date/Timestamp columns come in pairs when marking intervals.
+r421   | ERROR        | GRANT commands are not allowed.
+#
+# -----+--------------+--------------------------------------------------------------------------------------------
+# rule | Rules-Engine-Type:
+# id   | TERADATA_DDL | short_description
+# -----+--------------+--------------------------------------------------------------------------------------------
+# Physical Datatype Rules
+r422   | TBD          | Check if this table is a valid reference table.
+r423   | TBD          | A unique index should not include the term date or timestamp.
+#
+r424   | ERROR        | Classword CNT    (Count)       should have data type Integer.
+r425   | ERROR        | Classword AMT    (Amount)      should have data type Number.
+r426   | ERROR        | Classword DT     (Date)        should have data type Date.
+r427   | ERROR        | Classword DESC   (Description) should have data type Varchar(255).
+r428   | ERROR        | Classword ID     (Identifier)  should have data type Number or Varchar().
+r429   | ERROR        | Classword IND    (Indicator)   should have data type Char(1).
+r430   | ERROR        | Classword KEY    (Key)         should have data type Char(32) or BigInt.
+r431   | ERROR        | Classword LMT    (Limit)       should have data type Number.
+r432   | ERROR        | Classword LN     (Line)        should have data type Varchar().
+r433   | ERROR        | Classword NM     (Name)        should have data type Varchar(100) or Varchar(255).
+r434   | ERROR        | Classword NUM    (Number)      should have data type Varchar() or Number.
+r435   | ERROR        | Classword OBJ    (Object)      should have data type BLOB.
+r436   | ERROR        | Classword PCT    (Percent      should have data type Number.
+r437   | ERROR        | Classword PCTG   (Percentage)  should have data type Number.
+r438   | ERROR        | Classword PCTL   (Percentile)  should have data type Number.
+r439   | ERROR        | Classword QUALR  (Qualifier)   should have data type String.
+r440   | ERROR        | Classword QTY    (Quantity)    should have data type Number.
+r441   | ERROR        | Classword RNG    (Range)       should have data type Number.
+r442   | ERROR        | Classword RT     (Rating)      should have data type Number.
+r443   | ERROR        | Classword RTO    (Ratio)       should have data type Number.
+r444   | ERROR        | Classword TXT    (Text)        should have data type Varchar().
+r456   | ERROR        | Classword TY     (Type)        should have data type Varchar().
+r454   | ERROR        | Classword TYP    (Type)        should have data type Varchar().
+r445   | ERROR        | Classword TM     (Time)        should have data type Time.
+r446   | ERROR        | Classword TS     (Timestamp)   should have data type Datetime or Timestamp.
+r447   | ERROR        | Classword YR     (Year)        should have data type Number.
+r450   | ERROR        | Classword YR_MTH (YearMonth)   should have data type Char(6).
+# -----+--------------+--------------------------------------------------------------------------------------------
+r448   | TBD          | Materialized View name should end with _SV rather than _MV.
+r455   | TBD          | A class word with no token to the left is invalid.
+r457   | ERROR        | A Teradata cannot be created as a FALLBACK table.
+# -----+--------------+--------------------------------------------------------------------------------------------
+# rule | Rules-Engine-Type:
+# id   | TERADATA_DDL | short_description
+# -----+--------------+--------------------------------------------------------------------------------------------
+#

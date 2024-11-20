@@ -1,0 +1,13 @@
+# Filename: $SCRIPT_DIR/un_re/resources/cfg_array_exceptions.lst
+#
+# The general rule is that an array index should follow the classword.   
+# This config table lists the approved variations to that rule.
+# Sometimes a column name includes a number that should naturally be read before the classword.
+#
+# column_nm         | expiration_dt | comment_txt
+# ----------------- | ------------- | -----------
+DERV_NT_LVL_1_TXT   | 20990101      | None       
+DERV_NT_LVL_2_TXT   | 20990101      | None       
+FIRM_UND_65_IND     | 20990101      | None       
+UND_18_IND          | 20990101      | None       
+UND_65_IND          | 20990101      | None       

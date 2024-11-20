@@ -1,0 +1,27 @@
+name: Manual State Unlock
+
+on:
+  workflow_dispatch:
+    inputs:
+      lock_id:
+        required: true
+        type: string
+      environment:
+        required: true
+        type: choice
+        options:
+          - dev
+          - test
+          - prod
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  StateUnlock:
+    uses: ./.github/workflows/deploy.yaml
+    with:
+      environment: ${{ inputs.environment }}
+      action: force-unlock -force ${{ inputs.lock_id }}
+    secrets: inherit
